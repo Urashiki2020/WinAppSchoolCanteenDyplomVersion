@@ -32,7 +32,7 @@
             this.buttonInput = new System.Windows.Forms.Button();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBoxUser = new System.Windows.Forms.TextBox();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.pictureBoxUser = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelClosingTheForm = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@
             this.MainPanel.Controls.Add(this.buttonInput);
             this.MainPanel.Controls.Add(this.textBoxPassword);
             this.MainPanel.Controls.Add(this.pictureBox1);
-            this.MainPanel.Controls.Add(this.textBoxUser);
+            this.MainPanel.Controls.Add(this.textBoxLogin);
             this.MainPanel.Controls.Add(this.pictureBoxUser);
             this.MainPanel.Controls.Add(this.panel2);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -74,8 +74,9 @@
             this.buttonInput.Name = "buttonInput";
             this.buttonInput.Size = new System.Drawing.Size(163, 53);
             this.buttonInput.TabIndex = 5;
-            this.buttonInput.Text = "Войти";
+            this.buttonInput.Text = "Вход";
             this.buttonInput.UseVisualStyleBackColor = false;
+            this.buttonInput.Click += new System.EventHandler(this.buttonInput_Click);
             // 
             // textBoxPassword
             // 
@@ -96,14 +97,14 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // textBoxUser
+            // textBoxLogin
             // 
-            this.textBoxUser.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxUser.Location = new System.Drawing.Point(102, 133);
-            this.textBoxUser.Multiline = true;
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(237, 64);
-            this.textBoxUser.TabIndex = 2;
+            this.textBoxLogin.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxLogin.Location = new System.Drawing.Point(102, 133);
+            this.textBoxLogin.Multiline = true;
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.Size = new System.Drawing.Size(237, 64);
+            this.textBoxLogin.TabIndex = 2;
             // 
             // pictureBoxUser
             // 
@@ -182,7 +183,7 @@
         private System.Windows.Forms.Label TopPanel;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBoxUser;
+        private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.PictureBox pictureBoxUser;
         private System.Windows.Forms.Button buttonInput;
     }
