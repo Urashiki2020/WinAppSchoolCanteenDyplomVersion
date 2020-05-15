@@ -32,7 +32,7 @@ namespace Dyplomka
             SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             CloseAppButton.Play();//Воспроизводим данный аудиофайл
             CloseAppButton.PlaySync();//Воспроизводим данный аудиофайл первее функции "Application.Exit"
-
+            
             Application.Exit();
         }
 
@@ -148,6 +148,29 @@ namespace Dyplomka
         private void labelCreateAnAccount_MouseLeave(object sender, EventArgs e)
         {
             labelCreateAnAccount.ForeColor = Color.White;//Цвет кнопки при убирании курсора мыши
+        }
+
+        private void labelUsers_Click(object sender, EventArgs e)
+        {
+            SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            CloseAppButton.Play();//Воспроизводим данный аудиофайл
+            CloseAppButton.PlaySync();//Воспроизводим данный аудиофайл первее функции "Application.Exit"
+
+            this.Hide();//Скрываем текущее окно
+            FormUsers formUsers = new FormUsers();//Обращаемся к классу "FormUsers", на его основе создаем объект "formUsers" и выделяем под него память
+            formUsers.Show();//Обращаемся к объекту "formUsers" и обращаемся к функции "Show", которая позволит нам открыть это окно
+        }
+
+        private void labelUsers_MouseEnter(object sender, EventArgs e)
+        {
+            labelUsers.ForeColor = Color.Green;//Цвет кнопки при наведении курсора мыши
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
+
+        private void labelUsers_MouseLeave(object sender, EventArgs e)
+        {
+            labelUsers.ForeColor = Color.White;//Цвет кнопки при убирании курсора мыши
         }
     }
 }

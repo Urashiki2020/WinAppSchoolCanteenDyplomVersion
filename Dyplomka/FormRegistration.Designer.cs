@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.MainPanel1 = new System.Windows.Forms.Panel();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.comboBoxFillingInRoles = new System.Windows.Forms.ComboBox();
             this.textBoxIdUser = new System.Windows.Forms.TextBox();
             this.textBoxRoleField = new System.Windows.Forms.TextBox();
             this.textBoxSurnameField = new System.Windows.Forms.TextBox();
@@ -50,6 +52,8 @@
             // MainPanel1
             // 
             this.MainPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
+            this.MainPanel1.Controls.Add(this.buttonBack);
+            this.MainPanel1.Controls.Add(this.comboBoxFillingInRoles);
             this.MainPanel1.Controls.Add(this.textBoxIdUser);
             this.MainPanel1.Controls.Add(this.textBoxRoleField);
             this.MainPanel1.Controls.Add(this.textBoxSurnameField);
@@ -68,6 +72,37 @@
             this.MainPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPanel1_MouseDown);
             this.MainPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPanel1_MouseMove);
             // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(114)))), ((int)(((byte)(43)))));
+            this.buttonBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBack.FlatAppearance.BorderSize = 0;
+            this.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(49)))), ((int)(((byte)(18)))));
+            this.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(79)))), ((int)(((byte)(29)))));
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.ForeColor = System.Drawing.Color.White;
+            this.buttonBack.Location = new System.Drawing.Point(581, 383);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(163, 53);
+            this.buttonBack.TabIndex = 12;
+            this.buttonBack.Text = "Назад";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.buttonBack.MouseEnter += new System.EventHandler(this.buttonBack_MouseEnter);
+            // 
+            // comboBoxFillingInRoles
+            // 
+            this.comboBoxFillingInRoles.FormattingEnabled = true;
+            this.comboBoxFillingInRoles.Items.AddRange(new object[] {
+            "employee",
+            "client"});
+            this.comboBoxFillingInRoles.Location = new System.Drawing.Point(399, 244);
+            this.comboBoxFillingInRoles.Name = "comboBoxFillingInRoles";
+            this.comboBoxFillingInRoles.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxFillingInRoles.TabIndex = 11;
+            this.comboBoxFillingInRoles.SelectedIndexChanged += new System.EventHandler(this.comboBoxFillingInRoles_SelectedIndexChanged);
+            // 
             // textBoxIdUser
             // 
             this.textBoxIdUser.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -81,6 +116,7 @@
             // 
             // textBoxRoleField
             // 
+            this.textBoxRoleField.Enabled = false;
             this.textBoxRoleField.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxRoleField.Location = new System.Drawing.Point(119, 244);
             this.textBoxRoleField.Multiline = true;
@@ -122,7 +158,7 @@
             this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRegister.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRegister.ForeColor = System.Drawing.Color.White;
-            this.buttonRegister.Location = new System.Drawing.Point(526, 387);
+            this.buttonRegister.Location = new System.Drawing.Point(526, 320);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(267, 53);
             this.buttonRegister.TabIndex = 5;
@@ -243,5 +279,7 @@
         private System.Windows.Forms.TextBox textBoxSurnameField;
         private System.Windows.Forms.TextBox textBoxRoleField;
         private System.Windows.Forms.TextBox textBoxIdUser;
+        private System.Windows.Forms.ComboBox comboBoxFillingInRoles;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

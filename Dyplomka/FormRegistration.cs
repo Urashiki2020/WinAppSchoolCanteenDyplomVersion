@@ -27,7 +27,7 @@ namespace Dyplomka
             textBoxSurnameField.Text = "Введите фамилию";//Обращаемся к "textBoxSurnameField", обращаемся к тексту и при открытии данной формы помещаем данный текст в "textBoxSurnameField
             textBoxSurnameField.ForeColor = Color.Gray;//Устанавливаем начальный цвет текста подсказки в нашем случае это "Серый"
 
-            textBoxRoleField.Text = "Введите роль";//Обращаемся к "textBoxRoleField", обращаемся к тексту и при открытии данной формы помещаем данный текст в "textBoxRoleField"
+            textBoxRoleField.Text = "Выберите роль";//Обращаемся к "textBoxRoleField", обращаемся к тексту и при открытии данной формы помещаем данный текст в "textBoxRoleField"
             textBoxRoleField.ForeColor = Color.Gray;//Устанавливаем начальный цвет текста подсказки в нашем случае это "Серый"
 
             this.StartPosition = FormStartPosition.CenterScreen;//Отображает форму в центре экрана при запуске
@@ -267,7 +267,7 @@ namespace Dyplomka
 
         private void textBoxRoleField_Enter(object sender, EventArgs e)
         {
-            if (textBoxRoleField.Text == "Введите роль")//Делаем проверку, если текст внутри этого поля он равен "Введите роль", то только в таком случае мы "textBoxRoleField" будем очищать от текста, в других случаях мы его очищать от текста не будем
+            if (textBoxRoleField.Text == "Выберите роль")//Делаем проверку, если текст внутри этого поля он равен "Введите роль", то только в таком случае мы "textBoxRoleField" будем очищать от текста, в других случаях мы его очищать от текста не будем
             {
                 textBoxRoleField.Text = "";//Обращаемся к "textBoxRoleField", обращаемся к тексту который находится внутри него и устанавливаем его пустым
                 textBoxRoleField.ForeColor = Color.Black;//Когда пользователь вводит текст то он будет "Черный" 
@@ -276,11 +276,34 @@ namespace Dyplomka
 
         private void textBoxRoleField_Leave(object sender, EventArgs e)
         {
-            if (textBoxRoleField.Text == "")//Делаем проверку, если текст пустой и пользователь вышел из текстового поля, то мы устанавливаем ему обратно подсказку "ID"
+            if (textBoxRoleField.Text == "")//Делаем проверку, если текст пустой и пользователь вышел из текстового поля, то мы устанавливаем ему обратно подсказку "Выберите роль"
             {
-                textBoxRoleField.Text = "Введите роль";//Обращаемся к "textBoxRoleField", обращаемся к тексту внутри него и вставляем текст "Введите роль"
+                textBoxRoleField.Text = "Выберите роль";//Обращаемся к "textBoxRoleField", обращаемся к тексту внутри него и вставляем текст "Введите роль"
                 textBoxRoleField.ForeColor = Color.Gray;//Устанавливаем начальный цвет текста подсказки в нашем случае это "Серый"
             }
+        }
+
+        private void comboBoxFillingInRoles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBoxRoleField.Text = comboBoxFillingInRoles.Text;//Помещаем текст из выпадающего списка "comboBoxFillingInRoles" в "textBoxRoleField"
+            textBoxRoleField.ForeColor = Color.Black;//Когда пользователь вводит текст то он будет "Черный"
+        }
+
+        private void buttonBack_MouseEnter(object sender, EventArgs e)
+        {
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();
+
+            this.Hide();//Скрываем текущее окно
+            FormAuthorization formAuthorization = new FormAuthorization();//Обращаемся к классу "FormAuthorization", на его основе создаем объект "formAuthorization" и выделяем под него память
+            formAuthorization.Show();//Обращаемся к объекту "formAuthorization" и обращаемся к функции "Show", которая позволит нам открыть это окно
         }
     }
 }

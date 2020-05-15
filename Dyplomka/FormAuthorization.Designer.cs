@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.labelUsers = new System.Windows.Forms.Label();
+            this.labelCreateAnAccount = new System.Windows.Forms.Label();
             this.buttonInput = new System.Windows.Forms.Button();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -37,7 +39,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelClosingTheForm = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Label();
-            this.labelCreateAnAccount = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
@@ -47,6 +48,7 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
+            this.MainPanel.Controls.Add(this.labelUsers);
             this.MainPanel.Controls.Add(this.labelCreateAnAccount);
             this.MainPanel.Controls.Add(this.buttonInput);
             this.MainPanel.Controls.Add(this.textBoxPassword);
@@ -61,6 +63,36 @@
             this.MainPanel.TabIndex = 0;
             this.MainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPanel_MouseDown);
             this.MainPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPanel_MouseMove);
+            // 
+            // labelUsers
+            // 
+            this.labelUsers.AutoSize = true;
+            this.labelUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelUsers.ForeColor = System.Drawing.Color.White;
+            this.labelUsers.Location = new System.Drawing.Point(120, 376);
+            this.labelUsers.Name = "labelUsers";
+            this.labelUsers.Size = new System.Drawing.Size(147, 25);
+            this.labelUsers.TabIndex = 7;
+            this.labelUsers.Text = "Пользователи";
+            this.labelUsers.Click += new System.EventHandler(this.labelUsers_Click);
+            this.labelUsers.MouseEnter += new System.EventHandler(this.labelUsers_MouseEnter);
+            this.labelUsers.MouseLeave += new System.EventHandler(this.labelUsers_MouseLeave);
+            // 
+            // labelCreateAnAccount
+            // 
+            this.labelCreateAnAccount.AutoSize = true;
+            this.labelCreateAnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelCreateAnAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCreateAnAccount.ForeColor = System.Drawing.Color.White;
+            this.labelCreateAnAccount.Location = new System.Drawing.Point(97, 401);
+            this.labelCreateAnAccount.Name = "labelCreateAnAccount";
+            this.labelCreateAnAccount.Size = new System.Drawing.Size(190, 25);
+            this.labelCreateAnAccount.TabIndex = 6;
+            this.labelCreateAnAccount.Text = "Еще нет аккаунта?";
+            this.labelCreateAnAccount.Click += new System.EventHandler(this.labelCreateAnAccount_Click);
+            this.labelCreateAnAccount.MouseEnter += new System.EventHandler(this.labelCreateAnAccount_MouseEnter);
+            this.labelCreateAnAccount.MouseLeave += new System.EventHandler(this.labelCreateAnAccount_MouseLeave);
             // 
             // buttonInput
             // 
@@ -159,21 +191,6 @@
             this.TopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseDown);
             this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
             // 
-            // labelCreateAnAccount
-            // 
-            this.labelCreateAnAccount.AutoSize = true;
-            this.labelCreateAnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelCreateAnAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCreateAnAccount.ForeColor = System.Drawing.Color.White;
-            this.labelCreateAnAccount.Location = new System.Drawing.Point(97, 401);
-            this.labelCreateAnAccount.Name = "labelCreateAnAccount";
-            this.labelCreateAnAccount.Size = new System.Drawing.Size(190, 25);
-            this.labelCreateAnAccount.TabIndex = 6;
-            this.labelCreateAnAccount.Text = "Еще нет аккаунта?";
-            this.labelCreateAnAccount.Click += new System.EventHandler(this.labelCreateAnAccount_Click);
-            this.labelCreateAnAccount.MouseEnter += new System.EventHandler(this.labelCreateAnAccount_MouseEnter);
-            this.labelCreateAnAccount.MouseLeave += new System.EventHandler(this.labelCreateAnAccount_MouseLeave);
-            // 
             // FormAuthorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,5 +222,6 @@
         private System.Windows.Forms.PictureBox pictureBoxUser;
         private System.Windows.Forms.Button buttonInput;
         private System.Windows.Forms.Label labelCreateAnAccount;
+        private System.Windows.Forms.Label labelUsers;
     }
 }
