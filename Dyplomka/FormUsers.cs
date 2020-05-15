@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;//Данная библиотека содержит классы для воспроизведения звуковых файлов и работы с системными звуками
 using System.Globalization;
+using System.Data.SqlClient;
 
 namespace Dyplomka
 {
@@ -88,13 +89,6 @@ namespace Dyplomka
             lastPoint = new Point(e.X, e.Y);//Устанавливаем новые координаты в переменную "lastPoint"
         }
 
-        private void FormUsers_Load(object sender, EventArgs e)
-        {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet.Users". При необходимости она может быть перемещена или удалена.
-            this.usersTableAdapter.Fill(this.schoolCanteenDataSet.Users);
-
-        }
-
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
@@ -104,25 +98,6 @@ namespace Dyplomka
             dataGridView1.Rows.RemoveAt(dataGridView1.CurrentCell.RowIndex);//Удаление записи
             usersTableAdapter.Update(schoolCanteenDataSet);//Обновление данных в базе
             MessageBox.Show("Пользователь удален из базы данных");
-        }
-
-        private void comboBoxUsers_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //Устанавливаем фильтр в usersBindingSource
-            usersBindingSource.Filter = "[login] =\'" + comboBoxUsers.Text + "\'";
-
-            //Идентифицируем пользователя с помощью столбца "id_user", так как для члена значения мы выбрали столбец "id_user"
-            MessageBox.Show(comboBoxUsers.SelectedValue.ToString());
-        }
-
-        private void buttonDisplayAll_Click(object sender, EventArgs e)
-        {
-            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
-            PressingButton.Play();//Воспроизводим данный аудиофайл
-            PressingButton.PlaySync();
-
-            //Сбрасываем фильтр
-            usersBindingSource.Filter = null;
         }
 
         private void buttonDelete_MouseEnter(object sender, EventArgs e)
@@ -135,6 +110,22 @@ namespace Dyplomka
         {
             SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
+
+        private void FormUsers_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet.Users". При необходимости она может быть перемещена или удалена.
+            this.usersTableAdapter.Fill(this.schoolCanteenDataSet.Users);
+
+        }
+
+        private void comboBoxUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Устанавливаем фильтр в таблицу "Users"
+            usersBindingSource.Filter = "[login] =\'" + comboBoxUsers + "\'";
+
+            //Идентификация пользователя
+            MessageBox.Show(comboBoxUsers.SelectedValue.ToString());
         }
     }
 }

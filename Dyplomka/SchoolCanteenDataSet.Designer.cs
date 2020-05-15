@@ -1974,6 +1974,10 @@ namespace Dyplomka {
             
             private global::System.Data.DataColumn columnrole;
             
+            private global::System.Data.DataColumn columnname;
+            
+            private global::System.Data.DataColumn columnsurname;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public UsersDataTable() {
@@ -2041,6 +2045,22 @@ namespace Dyplomka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn nameColumn {
+                get {
+                    return this.columnname;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn surnameColumn {
+                get {
+                    return this.columnsurname;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2076,13 +2096,15 @@ namespace Dyplomka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public UsersRow AddUsersRow(int id_user, string login, string password, string role) {
+            public UsersRow AddUsersRow(int id_user, string login, string password, string role, string name, string surname) {
                 UsersRow rowUsersRow = ((UsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id_user,
                         login,
                         password,
-                        role};
+                        role,
+                        name,
+                        surname};
                 rowUsersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUsersRow);
                 return rowUsersRow;
@@ -2116,6 +2138,8 @@ namespace Dyplomka {
                 this.columnlogin = base.Columns["login"];
                 this.columnpassword = base.Columns["password"];
                 this.columnrole = base.Columns["role"];
+                this.columnname = base.Columns["name"];
+                this.columnsurname = base.Columns["surname"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2129,6 +2153,10 @@ namespace Dyplomka {
                 base.Columns.Add(this.columnpassword);
                 this.columnrole = new global::System.Data.DataColumn("role", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnrole);
+                this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnname);
+                this.columnsurname = new global::System.Data.DataColumn("surname", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsurname);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_user}, true));
                 this.columnid_user.AllowDBNull = false;
@@ -2139,6 +2167,8 @@ namespace Dyplomka {
                 this.columnpassword.MaxLength = 2147483647;
                 this.columnrole.AllowDBNull = false;
                 this.columnrole.MaxLength = 2147483647;
+                this.columnname.MaxLength = 2147483647;
+                this.columnsurname.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2864,6 +2894,62 @@ namespace Dyplomka {
                 set {
                     this[this.tableUsers.roleColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string name {
+                get {
+                    try {
+                        return ((string)(this[this.tableUsers.nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'name\' в таблице \'Users\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUsers.nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string surname {
+                get {
+                    try {
+                        return ((string)(this[this.tableUsers.surnameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'surname\' в таблице \'Users\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUsers.surnameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsnameNull() {
+                return this.IsNull(this.tableUsers.nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetnameNull() {
+                this[this.tableUsers.nameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IssurnameNull() {
+                return this.IsNull(this.tableUsers.surnameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetsurnameNull() {
+                this[this.tableUsers.surnameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5150,6 +5236,8 @@ SELECT id_report, Дата, [Количество посещаемых учен�
             tableMapping.ColumnMappings.Add("login", "login");
             tableMapping.ColumnMappings.Add("password", "password");
             tableMapping.ColumnMappings.Add("role", "role");
+            tableMapping.ColumnMappings.Add("name", "name");
+            tableMapping.ColumnMappings.Add("surname", "surname");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -5158,24 +5246,27 @@ SELECT id_report, Дата, [Количество посещаемых учен�
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_user", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_user", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Users] ([id_user], [login], [password], [role]) VALUES (@id_us" +
-                "er, @login, @password, @role);\r\nSELECT id_user, login, password, role FROM Users" +
-                " WHERE (id_user = @id_user)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Users] ([id_user], [login], [password], [role], [name], [surna" +
+                "me]) VALUES (@id_user, @login, @password, @role, @name, @surname);\r\nSELECT id_us" +
+                "er, login, password, role, name, surname FROM Users WHERE (id_user = @id_user)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_user", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_user", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@role", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "role", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@surname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Users] SET [id_user] = @id_user, [login] = @login, [password] = @pa" +
-                "ssword, [role] = @role WHERE (([id_user] = @Original_id_user));\r\nSELECT id_user," +
-                " login, password, role FROM Users WHERE (id_user = @id_user)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Users] SET [id_user] = @id_user, [login] = @login, [password] = @password, [role] = @role, [name] = @name, [surname] = @surname WHERE (([id_user] = @Original_id_user));
+SELECT id_user, login, password, role, name, surname FROM Users WHERE (id_user = @id_user)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_user", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_user", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@role", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "role", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@surname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_user", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_user", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
@@ -5192,7 +5283,7 @@ SELECT id_report, Дата, [Количество посещаемых учен�
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id_user, login, password, role FROM dbo.Users";
+            this._commandCollection[0].CommandText = "SELECT id_user, login, password, role, name, surname FROM dbo.Users";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5275,7 +5366,7 @@ SELECT id_report, Дата, [Количество посещаемых учен�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int id_user, string login, string password, string role) {
+        public virtual int Insert(int id_user, string login, string password, string role, string name, string surname) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(id_user));
             if ((login == null)) {
                 throw new global::System.ArgumentNullException("login");
@@ -5294,6 +5385,18 @@ SELECT id_report, Дата, [Количество посещаемых учен�
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(role));
+            }
+            if ((name == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(name));
+            }
+            if ((surname == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(surname));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5315,7 +5418,7 @@ SELECT id_report, Дата, [Количество посещаемых учен�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int id_user, string login, string password, string role, int Original_id_user) {
+        public virtual int Update(int id_user, string login, string password, string role, string name, string surname, int Original_id_user) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id_user));
             if ((login == null)) {
                 throw new global::System.ArgumentNullException("login");
@@ -5335,7 +5438,19 @@ SELECT id_report, Дата, [Количество посещаемых учен�
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(role));
             }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_id_user));
+            if ((name == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(name));
+            }
+            if ((surname == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(surname));
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_id_user));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5356,8 +5471,8 @@ SELECT id_report, Дата, [Количество посещаемых учен�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string login, string password, string role, int Original_id_user) {
-            return this.Update(Original_id_user, login, password, role, Original_id_user);
+        public virtual int Update(string login, string password, string role, string name, string surname, int Original_id_user) {
+            return this.Update(Original_id_user, login, password, role, name, surname, Original_id_user);
         }
     }
     

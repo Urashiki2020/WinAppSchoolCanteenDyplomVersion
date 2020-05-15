@@ -194,7 +194,13 @@ namespace Dyplomka
             classIniDataBase.OpenConnection();//Обращаемся к объекту "classIniDataBase" и обращаемся к функции "OpenConnection" для открытия соединения с базой данных
 
             if (command.ExecuteNonQuery() == 1)//Обращаемся к объекту "command", обращаемся к функции "ExecuteNonQuery", которая выполнит нам SQL запрос и здесь мы проверяем если она равна 1, то в таком случае мы будем знать что у нас все обработалось корректно
+            {
                 MessageBox.Show("Аккаунт зарегистрирован успешно");//Сообщение о том что пользователь зарегистрировался успешно
+
+                this.Hide();//Скрываем текущее окно
+                FormAuthorization formAuthorization = new FormAuthorization();//Обращаемся к классу "FormAuthorization", на его основе создаем объект "formAuthorization" и выделяем под него память
+                formAuthorization.Show();//Обращаемся к объекту "formAuthorization" и обращаемся к функции "Show", которая позволит нам открыть это окно
+            }
             else
                 MessageBox.Show("Аккаунт не был зарегистрирован");//Сообщение о том что аккаунт не был зарегистрирован
 
