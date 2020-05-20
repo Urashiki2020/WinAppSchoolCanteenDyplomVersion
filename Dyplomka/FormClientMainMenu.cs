@@ -16,6 +16,7 @@ namespace Dyplomka
         public FormClientMainMenu()
         {
             InitializeComponent();
+
             this.StartPosition = FormStartPosition.CenterScreen;//Отображает форму в центре экрана при запуске
         }
 
@@ -81,6 +82,23 @@ namespace Dyplomka
         }
 
         private void buttonExit_MouseEnter(object sender, EventArgs e)
+        {
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
+
+        private void buttonMakeAnOrder_Click(object sender, EventArgs e)
+        {
+            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();
+
+            this.Hide();
+            FormMakeAnOrder formMakeAnOrder = new FormMakeAnOrder();
+            formMakeAnOrder.Show();
+        }
+
+        private void buttonMakeAnOrder_MouseEnter(object sender, EventArgs e)
         {
             SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             HoverOverAButton.Play();//Воспроизводим данный аудиофайл

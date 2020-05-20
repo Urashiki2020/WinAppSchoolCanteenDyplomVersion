@@ -87,5 +87,39 @@ namespace Dyplomka
             SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             HoverOverAButton.Play();//Воспроизводим данный аудиофайл
         }
+
+        private void buttonFormSalesOrder_Click(object sender, EventArgs e)
+        {
+            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();//Воспроизводим данный аудиофайл первее аудиофайла "ProgramStart"
+
+            this.Hide();//Скрываем текущее окно
+            FormSalesOrder formSalesOrder = new FormSalesOrder();//Обращаемся к классу "FormSalesOrder", на его основе создаем объект "formSalesOrder" и выделяем под него память
+            formSalesOrder.Show();//Обращаемся к объекту "formAuthorization" и обращаемся к функции "Show", которая позволит нам открыть это окно
+        }
+
+        private void buttonFormSalesOrder_MouseEnter(object sender, EventArgs e)
+        {
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
+
+        private void buttonDiningRoomMenu_Click(object sender, EventArgs e)
+        {
+            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();//Воспроизводим данный аудиофайл первее аудиофайла "ProgramStart"
+
+            this.Hide();//Скрываем текущее окно
+            FormDiningRoomMenu formDiningRoomMenu = new FormDiningRoomMenu();//Обращаемся к классу "FormDiningRoomMenu", на его основе создаем объект "formDiningRoomMenu" и выделяем под него память
+            formDiningRoomMenu.Show();//Обращаемся к объекту "formDiningRoomMenu" и обращаемся к функции "Show", которая позволит нам открыть это окно
+        }
+
+        private void buttonDiningRoomMenu_MouseEnter(object sender, EventArgs e)
+        {
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
     }
 }

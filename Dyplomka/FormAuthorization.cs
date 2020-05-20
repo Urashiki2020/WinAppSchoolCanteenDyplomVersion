@@ -79,6 +79,10 @@ namespace Dyplomka
 
         private void buttonInput_Click(object sender, EventArgs e)
         {
+            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();
+
             SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-TVLAIMU\SQLEXPRESS;Initial Catalog=SchoolCanteen;Integrated Security=True");//Строка подключения базы данных
             try
             {
@@ -116,9 +120,6 @@ namespace Dyplomka
                 MessageBox.Show("Возникло исключение!");//Обращаемся к классу "MessageBox" и обращаемся к функции "Show", которая позволит нам показать данный текст в сплывающем окне
                 connection.Close();////Обращаемся к объекту "connection" и обращаемся к функции "Close", которая позволит закрыть соединение с базой данных SQL Server при возникновении исключения
             }
-
-            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
-            PressingButton.Play();//Воспроизводим данный аудиофайл
         }
 
         private void buttonInput_MouseEnter(object sender, EventArgs e)

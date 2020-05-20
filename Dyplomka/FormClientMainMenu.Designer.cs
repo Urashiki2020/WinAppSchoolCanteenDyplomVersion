@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.MainPanel3 = new System.Windows.Forms.Panel();
+            this.buttonMakeAnOrder = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelClosingTheForm = new System.Windows.Forms.Label();
             this.TopPanel3 = new System.Windows.Forms.Label();
-            this.buttonMakeAnOrder = new System.Windows.Forms.Button();
-            this.buttonDiningRoomMenu = new System.Windows.Forms.Button();
             this.MainPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +41,6 @@
             // MainPanel3
             // 
             this.MainPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
-            this.MainPanel3.Controls.Add(this.buttonDiningRoomMenu);
             this.MainPanel3.Controls.Add(this.buttonMakeAnOrder);
             this.MainPanel3.Controls.Add(this.buttonExit);
             this.MainPanel3.Controls.Add(this.panel2);
@@ -53,6 +51,25 @@
             this.MainPanel3.TabIndex = 2;
             this.MainPanel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPanel3_MouseDown);
             this.MainPanel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPanel3_MouseMove);
+            // 
+            // buttonMakeAnOrder
+            // 
+            this.buttonMakeAnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(114)))), ((int)(((byte)(43)))));
+            this.buttonMakeAnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMakeAnOrder.FlatAppearance.BorderSize = 0;
+            this.buttonMakeAnOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(49)))), ((int)(((byte)(18)))));
+            this.buttonMakeAnOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(79)))), ((int)(((byte)(29)))));
+            this.buttonMakeAnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMakeAnOrder.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMakeAnOrder.ForeColor = System.Drawing.Color.White;
+            this.buttonMakeAnOrder.Location = new System.Drawing.Point(295, 250);
+            this.buttonMakeAnOrder.Name = "buttonMakeAnOrder";
+            this.buttonMakeAnOrder.Size = new System.Drawing.Size(207, 53);
+            this.buttonMakeAnOrder.TabIndex = 6;
+            this.buttonMakeAnOrder.Text = "Сделать заказ";
+            this.buttonMakeAnOrder.UseVisualStyleBackColor = false;
+            this.buttonMakeAnOrder.Click += new System.EventHandler(this.buttonMakeAnOrder_Click);
+            this.buttonMakeAnOrder.MouseEnter += new System.EventHandler(this.buttonMakeAnOrder_MouseEnter);
             // 
             // buttonExit
             // 
@@ -113,40 +130,6 @@
             this.TopPanel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPanel3_MouseDown);
             this.TopPanel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel3_MouseMove);
             // 
-            // buttonMakeAnOrder
-            // 
-            this.buttonMakeAnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(114)))), ((int)(((byte)(43)))));
-            this.buttonMakeAnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonMakeAnOrder.FlatAppearance.BorderSize = 0;
-            this.buttonMakeAnOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(49)))), ((int)(((byte)(18)))));
-            this.buttonMakeAnOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(79)))), ((int)(((byte)(29)))));
-            this.buttonMakeAnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMakeAnOrder.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMakeAnOrder.ForeColor = System.Drawing.Color.White;
-            this.buttonMakeAnOrder.Location = new System.Drawing.Point(304, 265);
-            this.buttonMakeAnOrder.Name = "buttonMakeAnOrder";
-            this.buttonMakeAnOrder.Size = new System.Drawing.Size(207, 53);
-            this.buttonMakeAnOrder.TabIndex = 6;
-            this.buttonMakeAnOrder.Text = "Сделать заказ";
-            this.buttonMakeAnOrder.UseVisualStyleBackColor = false;
-            // 
-            // buttonDiningRoomMenu
-            // 
-            this.buttonDiningRoomMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(114)))), ((int)(((byte)(43)))));
-            this.buttonDiningRoomMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDiningRoomMenu.FlatAppearance.BorderSize = 0;
-            this.buttonDiningRoomMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(49)))), ((int)(((byte)(18)))));
-            this.buttonDiningRoomMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(79)))), ((int)(((byte)(29)))));
-            this.buttonDiningRoomMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDiningRoomMenu.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDiningRoomMenu.ForeColor = System.Drawing.Color.White;
-            this.buttonDiningRoomMenu.Location = new System.Drawing.Point(304, 206);
-            this.buttonDiningRoomMenu.Name = "buttonDiningRoomMenu";
-            this.buttonDiningRoomMenu.Size = new System.Drawing.Size(207, 53);
-            this.buttonDiningRoomMenu.TabIndex = 7;
-            this.buttonDiningRoomMenu.Text = "Меню";
-            this.buttonDiningRoomMenu.UseVisualStyleBackColor = false;
-            // 
             // FormClientMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -170,7 +153,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelClosingTheForm;
         private System.Windows.Forms.Label TopPanel3;
-        private System.Windows.Forms.Button buttonDiningRoomMenu;
         private System.Windows.Forms.Button buttonMakeAnOrder;
     }
 }

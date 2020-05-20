@@ -60,17 +60,41 @@
     <Compile Include="FormClientMainMenu.Designer.cs">
       <DependentUpon>FormClientMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDiningRoomMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiningRoomMenu.Designer.cs">
+      <DependentUpon>FormDiningRoomMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEmployeeMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEmployeeMainMenu.Designer.cs">
       <DependentUpon>FormEmployeeMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGreeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGreeting.Designer.cs">
+      <DependentUpon>FormGreeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMakeAnOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMakeAnOrder.Designer.cs">
+      <DependentUpon>FormMakeAnOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegistration.Designer.cs">
       <DependentUpon>FormRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalesOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesOrder.Designer.cs">
+      <DependentUpon>FormSalesOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUsers.cs">
       <SubType>Form</SubType>
@@ -85,17 +109,50 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolCanteenDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SchoolCanteenDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolCanteenDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolCanteenDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolCanteenDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolCanteenDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Slider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Slider.Designer.cs">
+      <DependentUpon>Slider.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormClientMainMenu.resx">
       <DependentUpon>FormClientMainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDiningRoomMenu.resx">
+      <DependentUpon>FormDiningRoomMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEmployeeMainMenu.resx">
       <DependentUpon>FormEmployeeMainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormGreeting.resx">
+      <DependentUpon>FormGreeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMakeAnOrder.resx">
+      <DependentUpon>FormMakeAnOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesOrder.resx">
+      <DependentUpon>FormSalesOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUsers.resx">
       <DependentUpon>FormUsers.cs</DependentUpon>
@@ -110,6 +167,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Slider.resx">
+      <DependentUpon>Slider.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,12 +190,74 @@
     <None Include="SchoolCanteenDataSet.xss">
       <DependentUpon>SchoolCanteenDataSet.xsd</DependentUpon>
     </None>
+    <None Include="SchoolCanteenDataSet1.xsc">
+      <DependentUpon>SchoolCanteenDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolCanteenDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolCanteenDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolCanteenDataSet1.xss">
+      <DependentUpon>SchoolCanteenDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolCanteenDataSet2.xsc">
+      <DependentUpon>SchoolCanteenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolCanteenDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolCanteenDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolCanteenDataSet2.xss">
+      <DependentUpon>SchoolCanteenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolCanteenDataSet3.xsc">
+      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolCanteenDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolCanteenDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolCanteenDataSet3.xss">
+      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pictures\Button save.png" />
     <Content Include="Pictures\Password.png" />
     <Content Include="Pictures\User.png" />
   </ItemGroup>
