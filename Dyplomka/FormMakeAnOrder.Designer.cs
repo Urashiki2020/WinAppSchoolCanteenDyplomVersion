@@ -36,12 +36,8 @@
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.schoolCanteenDataSet = new Dyplomka.SchoolCanteenDataSet();
             this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.schoolCanteenDataSet3 = new Dyplomka.SchoolCanteenDataSet3();
-            this.schoolCanteenDataSet2 = new Dyplomka.SchoolCanteenDataSet2();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersTableAdapter = new Dyplomka.SchoolCanteenDataSet2TableAdapters.OrdersTableAdapter();
             this.schoolCanteenDataSet3BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersTableAdapter1 = new Dyplomka.SchoolCanteenDataSet3TableAdapters.OrdersTableAdapter();
             this.dining_room_menuTableAdapter = new Dyplomka.SchoolCanteenDataSet1TableAdapters.Dining_room_menuTableAdapter();
             this.usersTableAdapter = new Dyplomka.SchoolCanteenDataSetTableAdapters.UsersTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -49,15 +45,10 @@
             this.TopPanel8 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonTakeAnOrder = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idproductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.клиентDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.наименованиеПродуктаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordersBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.ordersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBoxClient = new System.Windows.Forms.ComboBox();
+            this.usersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.usersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxNameOfProduct = new System.Windows.Forms.ComboBox();
             this.textBoxQuantity = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -65,11 +56,29 @@
             this.наименованиеБлюдаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainPanel8 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idproductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.клиентDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.продуктDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordersBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.schoolCanteenDataSet5 = new Dyplomka.SchoolCanteenDataSet5();
             this.comboBoxPrice = new System.Windows.Forms.ComboBox();
             this.diningRoomMenuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.diningRoomMenuBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.usersBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.tableAdapterManager = new Dyplomka.SchoolCanteenDataSet3TableAdapters.TableAdapterManager();
+            this.ordersBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersTableAdapter2 = new Dyplomka.SchoolCanteenDataSet5TableAdapters.OrdersTableAdapter();
+            this.ordersBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.usersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBoxClient = new System.Windows.Forms.ComboBox();
+            this.usersBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.schoolCanteenDataSet2 = new Dyplomka.SchoolCanteenDataSet2();
+            this.schoolCanteenDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter1 = new Dyplomka.SchoolCanteenDataSet2TableAdapters.UsersTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.diningRoomMenuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diningRoomMenuBindingSource2)).BeginInit();
@@ -77,19 +86,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3BindingSource)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.MainPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diningRoomMenuBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diningRoomMenuBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource6)).BeginInit();
             this.SuspendLayout();
             // 
             // diningRoomMenuBindingSource
@@ -121,39 +140,6 @@
             // 
             this.schoolCanteenDataSet.DataSetName = "SchoolCanteenDataSet";
             this.schoolCanteenDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ordersBindingSource1
-            // 
-            this.ordersBindingSource1.DataMember = "Orders";
-            this.ordersBindingSource1.DataSource = this.schoolCanteenDataSet3;
-            // 
-            // schoolCanteenDataSet3
-            // 
-            this.schoolCanteenDataSet3.DataSetName = "SchoolCanteenDataSet3";
-            this.schoolCanteenDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // schoolCanteenDataSet2
-            // 
-            this.schoolCanteenDataSet2.DataSetName = "SchoolCanteenDataSet2";
-            this.schoolCanteenDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ordersBindingSource
-            // 
-            this.ordersBindingSource.DataMember = "Orders";
-            this.ordersBindingSource.DataSource = this.schoolCanteenDataSet2;
-            // 
-            // ordersTableAdapter
-            // 
-            this.ordersTableAdapter.ClearBeforeFill = true;
-            // 
-            // schoolCanteenDataSet3BindingSource
-            // 
-            this.schoolCanteenDataSet3BindingSource.DataSource = this.schoolCanteenDataSet3;
-            this.schoolCanteenDataSet3BindingSource.Position = 0;
-            // 
-            // ordersTableAdapter1
-            // 
-            this.ordersTableAdapter1.ClearBeforeFill = true;
             // 
             // dining_room_menuTableAdapter
             // 
@@ -241,84 +227,23 @@
             this.buttonTakeAnOrder.Click += new System.EventHandler(this.buttonTakeAnOrder_Click);
             this.buttonTakeAnOrder.MouseEnter += new System.EventHandler(this.buttonTakeAnOrder_MouseEnter);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idproductDataGridViewTextBoxColumn,
-            this.клиентDataGridViewTextBoxColumn,
-            this.наименованиеПродуктаDataGridViewTextBoxColumn,
-            this.ценаDataGridViewTextBoxColumn,
-            this.количествоDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.ordersBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 106);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(636, 197);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // idproductDataGridViewTextBoxColumn
-            // 
-            this.idproductDataGridViewTextBoxColumn.DataPropertyName = "id_product";
-            this.idproductDataGridViewTextBoxColumn.HeaderText = "id_product";
-            this.idproductDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idproductDataGridViewTextBoxColumn.Name = "idproductDataGridViewTextBoxColumn";
-            this.idproductDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idproductDataGridViewTextBoxColumn.Width = 113;
-            // 
-            // клиентDataGridViewTextBoxColumn
-            // 
-            this.клиентDataGridViewTextBoxColumn.DataPropertyName = "Клиент";
-            this.клиентDataGridViewTextBoxColumn.HeaderText = "Клиент";
-            this.клиентDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.клиентDataGridViewTextBoxColumn.Name = "клиентDataGridViewTextBoxColumn";
-            this.клиентDataGridViewTextBoxColumn.Width = 112;
-            // 
-            // наименованиеПродуктаDataGridViewTextBoxColumn
-            // 
-            this.наименованиеПродуктаDataGridViewTextBoxColumn.DataPropertyName = "Наименование продукта";
-            this.наименованиеПродуктаDataGridViewTextBoxColumn.HeaderText = "Наименование продукта";
-            this.наименованиеПродуктаDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.наименованиеПродуктаDataGridViewTextBoxColumn.Name = "наименованиеПродуктаDataGridViewTextBoxColumn";
-            this.наименованиеПродуктаDataGridViewTextBoxColumn.Width = 113;
-            // 
-            // ценаDataGridViewTextBoxColumn
-            // 
-            this.ценаDataGridViewTextBoxColumn.DataPropertyName = "Цена";
-            this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
-            this.ценаDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
-            this.ценаDataGridViewTextBoxColumn.Width = 112;
-            // 
-            // количествоDataGridViewTextBoxColumn
-            // 
-            this.количествоDataGridViewTextBoxColumn.DataPropertyName = "Количество";
-            this.количествоDataGridViewTextBoxColumn.HeaderText = "Количество";
-            this.количествоDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.количествоDataGridViewTextBoxColumn.Name = "количествоDataGridViewTextBoxColumn";
-            this.количествоDataGridViewTextBoxColumn.Width = 113;
-            // 
             // ordersBindingSource4
             // 
             this.ordersBindingSource4.DataMember = "Orders";
-            this.ordersBindingSource4.DataSource = this.schoolCanteenDataSet3;
             // 
             // ordersBindingSource3
             // 
             this.ordersBindingSource3.DataMember = "Orders";
             // 
-            // comboBoxClient
+            // usersBindingSource2
             // 
-            this.comboBoxClient.DataSource = this.usersBindingSource;
-            this.comboBoxClient.DisplayMember = "login";
-            this.comboBoxClient.FormattingEnabled = true;
-            this.comboBoxClient.Location = new System.Drawing.Point(10, 309);
-            this.comboBoxClient.Name = "comboBoxClient";
-            this.comboBoxClient.Size = new System.Drawing.Size(151, 24);
-            this.comboBoxClient.TabIndex = 9;
-            this.comboBoxClient.ValueMember = "id_user";
+            this.usersBindingSource2.DataMember = "Users";
+            this.usersBindingSource2.DataSource = this.schoolCanteenDataSet;
+            // 
+            // usersBindingSource3
+            // 
+            this.usersBindingSource3.DataMember = "Users";
+            this.usersBindingSource3.DataSource = this.schoolCanteenDataSet;
             // 
             // comboBoxNameOfProduct
             // 
@@ -383,12 +308,12 @@
             // MainPanel8
             // 
             this.MainPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
+            this.MainPanel8.Controls.Add(this.comboBoxClient);
+            this.MainPanel8.Controls.Add(this.dataGridView1);
             this.MainPanel8.Controls.Add(this.comboBoxPrice);
             this.MainPanel8.Controls.Add(this.dataGridView2);
             this.MainPanel8.Controls.Add(this.textBoxQuantity);
             this.MainPanel8.Controls.Add(this.comboBoxNameOfProduct);
-            this.MainPanel8.Controls.Add(this.comboBoxClient);
-            this.MainPanel8.Controls.Add(this.dataGridView1);
             this.MainPanel8.Controls.Add(this.buttonTakeAnOrder);
             this.MainPanel8.Controls.Add(this.buttonBack);
             this.MainPanel8.Controls.Add(this.panel2);
@@ -399,6 +324,76 @@
             this.MainPanel8.TabIndex = 3;
             this.MainPanel8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPanel8_MouseDown);
             this.MainPanel8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPanel8_MouseMove);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idproductDataGridViewTextBoxColumn,
+            this.клиентDataGridViewTextBoxColumn,
+            this.продуктDataGridViewTextBoxColumn,
+            this.ценаDataGridViewTextBoxColumn,
+            this.количествоDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.ordersBindingSource7;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 106);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(636, 197);
+            this.dataGridView1.TabIndex = 16;
+            // 
+            // idproductDataGridViewTextBoxColumn
+            // 
+            this.idproductDataGridViewTextBoxColumn.DataPropertyName = "id_product";
+            this.idproductDataGridViewTextBoxColumn.HeaderText = "id_product";
+            this.idproductDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idproductDataGridViewTextBoxColumn.Name = "idproductDataGridViewTextBoxColumn";
+            this.idproductDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idproductDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // клиентDataGridViewTextBoxColumn
+            // 
+            this.клиентDataGridViewTextBoxColumn.DataPropertyName = "Клиент";
+            this.клиентDataGridViewTextBoxColumn.HeaderText = "Клиент";
+            this.клиентDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.клиентDataGridViewTextBoxColumn.Name = "клиентDataGridViewTextBoxColumn";
+            this.клиентDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // продуктDataGridViewTextBoxColumn
+            // 
+            this.продуктDataGridViewTextBoxColumn.DataPropertyName = "Продукт";
+            this.продуктDataGridViewTextBoxColumn.HeaderText = "Продукт";
+            this.продуктDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.продуктDataGridViewTextBoxColumn.Name = "продуктDataGridViewTextBoxColumn";
+            this.продуктDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ценаDataGridViewTextBoxColumn
+            // 
+            this.ценаDataGridViewTextBoxColumn.DataPropertyName = "Цена";
+            this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
+            this.ценаDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
+            this.ценаDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // количествоDataGridViewTextBoxColumn
+            // 
+            this.количествоDataGridViewTextBoxColumn.DataPropertyName = "Количество";
+            this.количествоDataGridViewTextBoxColumn.HeaderText = "Количество";
+            this.количествоDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.количествоDataGridViewTextBoxColumn.Name = "количествоDataGridViewTextBoxColumn";
+            this.количествоDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ordersBindingSource7
+            // 
+            this.ordersBindingSource7.DataMember = "Orders";
+            this.ordersBindingSource7.DataSource = this.schoolCanteenDataSet5;
+            // 
+            // schoolCanteenDataSet5
+            // 
+            this.schoolCanteenDataSet5.DataSetName = "SchoolCanteenDataSet5";
+            this.schoolCanteenDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBoxPrice
             // 
@@ -422,11 +417,65 @@
             this.diningRoomMenuBindingSource3.DataMember = "Dining room menu";
             this.diningRoomMenuBindingSource3.DataSource = this.schoolCanteenDataSet1;
             // 
-            // tableAdapterManager
+            // usersBindingSource4
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.OrdersTableAdapter = this.ordersTableAdapter1;
-            this.tableAdapterManager.UpdateOrder = Dyplomka.SchoolCanteenDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.usersBindingSource4.DataMember = "Users";
+            this.usersBindingSource4.DataSource = this.schoolCanteenDataSet;
+            // 
+            // ordersBindingSource5
+            // 
+            this.ordersBindingSource5.DataMember = "Orders";
+            this.ordersBindingSource5.DataSource = this.schoolCanteenDataSet5;
+            // 
+            // ordersTableAdapter2
+            // 
+            this.ordersTableAdapter2.ClearBeforeFill = true;
+            // 
+            // ordersBindingSource6
+            // 
+            this.ordersBindingSource6.DataMember = "Orders";
+            this.ordersBindingSource6.DataSource = this.schoolCanteenDataSet5;
+            // 
+            // usersBindingSource1
+            // 
+            this.usersBindingSource1.DataMember = "Users";
+            this.usersBindingSource1.DataSource = this.schoolCanteenDataSet;
+            // 
+            // comboBoxClient
+            // 
+            this.comboBoxClient.DataSource = this.usersBindingSource6;
+            this.comboBoxClient.DisplayMember = "login";
+            this.comboBoxClient.FormattingEnabled = true;
+            this.comboBoxClient.Location = new System.Drawing.Point(13, 309);
+            this.comboBoxClient.Name = "comboBoxClient";
+            this.comboBoxClient.Size = new System.Drawing.Size(148, 24);
+            this.comboBoxClient.TabIndex = 17;
+            this.comboBoxClient.ValueMember = "id_user";
+            this.comboBoxClient.SelectedIndexChanged += new System.EventHandler(this.comboBoxClient_SelectedIndexChanged);
+            // 
+            // usersBindingSource5
+            // 
+            this.usersBindingSource5.DataMember = "Users";
+            this.usersBindingSource5.DataSource = this.schoolCanteenDataSet;
+            // 
+            // schoolCanteenDataSet2
+            // 
+            this.schoolCanteenDataSet2.DataSetName = "SchoolCanteenDataSet2";
+            this.schoolCanteenDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // schoolCanteenDataSet2BindingSource
+            // 
+            this.schoolCanteenDataSet2BindingSource.DataSource = this.schoolCanteenDataSet2;
+            this.schoolCanteenDataSet2BindingSource.Position = 0;
+            // 
+            // usersBindingSource6
+            // 
+            this.usersBindingSource6.DataMember = "Users";
+            this.usersBindingSource6.DataSource = this.schoolCanteenDataSet2;
+            // 
+            // usersTableAdapter1
+            // 
+            this.usersTableAdapter1.ClearBeforeFill = true;
             // 
             // FormMakeAnOrder
             // 
@@ -445,33 +494,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3BindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.MainPanel8.ResumeLayout(false);
             this.MainPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diningRoomMenuBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diningRoomMenuBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource6)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private SchoolCanteenDataSet2 schoolCanteenDataSet2;
         private System.Windows.Forms.BindingSource ordersBindingSource;
-        private SchoolCanteenDataSet2TableAdapters.OrdersTableAdapter ordersTableAdapter;
         private System.Windows.Forms.BindingSource schoolCanteenDataSet3BindingSource;
-        private SchoolCanteenDataSet3 schoolCanteenDataSet3;
         private System.Windows.Forms.BindingSource ordersBindingSource1;
-        private SchoolCanteenDataSet3TableAdapters.OrdersTableAdapter ordersTableAdapter1;
         private SchoolCanteenDataSet1 schoolCanteenDataSet1;
         private System.Windows.Forms.BindingSource diningRoomMenuBindingSource;
         private SchoolCanteenDataSet1TableAdapters.Dining_room_menuTableAdapter dining_room_menuTableAdapter;
@@ -485,13 +540,6 @@
         private System.Windows.Forms.Label TopPanel8;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonTakeAnOrder;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn клиентDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn наименованиеПродуктаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ценаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn количествоDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ComboBox comboBoxClient;
         private System.Windows.Forms.ComboBox comboBoxNameOfProduct;
         private System.Windows.Forms.TextBox textBoxQuantity;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -505,6 +553,26 @@
         private System.Windows.Forms.BindingSource ordersBindingSource2;
         private System.Windows.Forms.BindingSource ordersBindingSource3;
         private System.Windows.Forms.BindingSource ordersBindingSource4;
-        private SchoolCanteenDataSet3TableAdapters.TableAdapterManager tableAdapterManager;
+        private SchoolCanteenDataSet5 schoolCanteenDataSet5;
+        private System.Windows.Forms.BindingSource ordersBindingSource5;
+        private SchoolCanteenDataSet5TableAdapters.OrdersTableAdapter ordersTableAdapter2;
+        private System.Windows.Forms.BindingSource ordersBindingSource6;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn клиентDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn продуктDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ценаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn количествоDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource ordersBindingSource7;
+        private System.Windows.Forms.BindingSource usersBindingSource1;
+        private System.Windows.Forms.BindingSource usersBindingSource2;
+        private System.Windows.Forms.BindingSource usersBindingSource3;
+        private System.Windows.Forms.BindingSource usersBindingSource4;
+        private System.Windows.Forms.ComboBox comboBoxClient;
+        private System.Windows.Forms.BindingSource usersBindingSource5;
+        private System.Windows.Forms.BindingSource schoolCanteenDataSet2BindingSource;
+        private SchoolCanteenDataSet2 schoolCanteenDataSet2;
+        private System.Windows.Forms.BindingSource usersBindingSource6;
+        private SchoolCanteenDataSet2TableAdapters.UsersTableAdapter usersTableAdapter1;
     }
 }

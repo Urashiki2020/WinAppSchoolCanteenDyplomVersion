@@ -58,6 +58,7 @@
             // labelGreeting
             // 
             this.labelGreeting.AutoSize = true;
+            this.labelGreeting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelGreeting.Font = new System.Drawing.Font("Ink Free", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGreeting.ForeColor = System.Drawing.Color.White;
             this.labelGreeting.Location = new System.Drawing.Point(65, 235);

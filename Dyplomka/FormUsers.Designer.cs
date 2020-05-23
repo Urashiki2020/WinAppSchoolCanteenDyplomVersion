@@ -52,6 +52,7 @@
             this.usersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.usersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter = new Dyplomka.SchoolCanteenDataSetTableAdapters.UsersTableAdapter();
+            this.usersBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.MainPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet)).BeginInit();
@@ -63,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource7)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel4
@@ -115,7 +117,7 @@
             this.roleDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.surnameDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.usersBindingSource6;
+            this.dataGridView1.DataSource = this.usersBindingSource7;
             this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(10, 106);
             this.dataGridView1.Name = "dataGridView1";
@@ -275,6 +277,11 @@
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
+            // usersBindingSource7
+            // 
+            this.usersBindingSource7.DataMember = "Users";
+            this.usersBindingSource7.DataSource = this.schoolCanteenDataSet;
+            // 
             // FormUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -297,6 +304,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,5 +340,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource usersBindingSource7;
     }
 }

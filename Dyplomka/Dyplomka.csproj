@@ -33,6 +33,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -90,6 +117,12 @@
     <Compile Include="FormRegistration.Designer.cs">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSalesOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,10 +152,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolCanteenDataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="SchoolCanteenDataSet3.Designer.cs">
+    <Compile Include="SchoolCanteenDataSet5.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
+      <DependentUpon>SchoolCanteenDataSet5.xsd</DependentUpon>
     </Compile>
     <Compile Include="Slider.cs">
       <SubType>UserControl</SubType>
@@ -130,6 +163,7 @@
     <Compile Include="Slider.Designer.cs">
       <DependentUpon>Slider.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +185,9 @@
     <EmbeddedResource Include="FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSalesOrder.resx">
       <DependentUpon>FormSalesOrder.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,9 +204,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportCanteenOperationReport.rdlc" />
     <EmbeddedResource Include="Slider.resx">
       <DependentUpon>Slider.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ActivityManager\ActivityManager.exe.config" />
+    <None Include="ActivityManager\AmEditor.exe.config" />
+    <None Include="ActivityManager\AmEditor.ignorelist" />
+    <None Include="ActivityManager\caspol.bat" />
+    <None Include="ActivityManager\lang\activity_manager.en" />
+    <None Include="ActivityManager\lang\am_editor.en" />
+    <None Include="ActivityManager\lang\io_module.en" />
+    <None Include="ActivityManager\lang\report_module.en" />
+    <None Include="ActivityManager\lang\sql_module.en" />
+    <None Include="ActivityManager\mssql.synax" />
+    <None Include="ActivityManager\plugins\Except.dic" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -212,16 +262,16 @@
     <None Include="SchoolCanteenDataSet2.xss">
       <DependentUpon>SchoolCanteenDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="SchoolCanteenDataSet3.xsc">
-      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
+    <None Include="SchoolCanteenDataSet5.xsc">
+      <DependentUpon>SchoolCanteenDataSet5.xsd</DependentUpon>
     </None>
-    <None Include="SchoolCanteenDataSet3.xsd">
+    <None Include="SchoolCanteenDataSet5.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SchoolCanteenDataSet3.Designer.cs</LastGenOutput>
+      <LastGenOutput>SchoolCanteenDataSet5.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="SchoolCanteenDataSet3.xss">
-      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
+    <None Include="SchoolCanteenDataSet5.xss">
+      <DependentUpon>SchoolCanteenDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -257,9 +307,63 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ActivityManager\ActivityManager.exe" />
+    <Content Include="ActivityManager\AMClasses.dll" />
+    <Content Include="ActivityManager\AmEditor.exe" />
+    <Content Include="ActivityManager\AmLibrary.dll" />
+    <Content Include="ActivityManager\plugins\ConvertModule.dll" />
+    <Content Include="ActivityManager\plugins\ConvertModule.xml" />
+    <Content Include="ActivityManager\plugins\DataTypes.dll" />
+    <Content Include="ActivityManager\plugins\Declension.dll" />
+    <Content Include="ActivityManager\plugins\ExtendedTypes.dll" />
+    <Content Include="ActivityManager\plugins\gudusoft.gsqlparser.dll" />
+    <Content Include="ActivityManager\plugins\HtmlAgilityPack.dll" />
+    <Content Include="ActivityManager\plugins\HtmlAgilityPack.xml" />
+    <Content Include="ActivityManager\plugins\HtmlDataSource.dll" />
+    <Content Include="ActivityManager\plugins\HtmlDataSource.XML" />
+    <Content Include="ActivityManager\plugins\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="ActivityManager\plugins\IOModule.dll" />
+    <Content Include="ActivityManager\plugins\IOModule.xml" />
+    <Content Include="ActivityManager\plugins\JSModule.dll" />
+    <Content Include="ActivityManager\plugins\JSModule.xml" />
+    <Content Include="ActivityManager\plugins\JsonDataSource.dll" />
+    <Content Include="ActivityManager\plugins\JsonDataSource.XML" />
+    <Content Include="ActivityManager\plugins\msvcm90.dll" />
+    <Content Include="ActivityManager\plugins\msvcp90.dll" />
+    <Content Include="ActivityManager\plugins\msvcr90.dll" />
+    <Content Include="ActivityManager\plugins\Newtonsoft.Json.dll" />
+    <Content Include="ActivityManager\plugins\Newtonsoft.Json.xml" />
+    <Content Include="ActivityManager\plugins\Noesis.Javascript.dll" />
+    <Content Include="ActivityManager\plugins\PadegUC.dll" />
+    <Content Include="ActivityManager\plugins\QueryTextDriver.dll" />
+    <Content Include="ActivityManager\plugins\QueryTextDriverException.dll" />
+    <Content Include="ActivityManager\plugins\ReportModule.dll" />
+    <Content Include="ActivityManager\plugins\ReportModule.xml" />
+    <Content Include="ActivityManager\plugins\SqlDataSource.dll" />
+    <Content Include="ActivityManager\plugins\SqlDataSource.xml" />
+    <Content Include="ActivityManager\plugins\TextDataSource.dll" />
+    <Content Include="ActivityManager\plugins\TextDataSource.xml" />
+    <Content Include="ActivityManager\plugins\XmlDataSource.dll" />
+    <Content Include="ActivityManager\plugins\XmlDataSource.XML" />
+    <Content Include="ActivityManager\SciLexer.dll" />
+    <Content Include="ActivityManager\ScintillaNET.dll" />
+    <Content Include="ActivityManager\ScintillaNET.xml" />
     <Content Include="Pictures\Button save.png" />
     <Content Include="Pictures\Password.png" />
     <Content Include="Pictures\User.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

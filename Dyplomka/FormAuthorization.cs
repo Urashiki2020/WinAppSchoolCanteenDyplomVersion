@@ -19,7 +19,7 @@ namespace Dyplomka
         {
             InitializeComponent();
 
-            SoundPlayer ProgramStart = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Program start.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " ProgramStart", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer ProgramStart = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Program start.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " ProgramStart", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             ProgramStart.Play();//Воспроизводим данный аудиофайл
 
             this.StartPosition = FormStartPosition.CenterScreen;//Отображает форму в центре экрана при запуске
@@ -29,7 +29,7 @@ namespace Dyplomka
 
         private void labelClosingTheForm_Click(object sender, EventArgs e)
         {
-            SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             CloseAppButton.Play();//Воспроизводим данный аудиофайл
             CloseAppButton.PlaySync();//Воспроизводим данный аудиофайл первее функции "Application.Exit"
             
@@ -39,7 +39,7 @@ namespace Dyplomka
         private void labelClosingTheForm_MouseEnter(object sender, EventArgs e)
         {
             labelClosingTheForm.ForeColor = Color.Green;//Цвет кнопки при наведении курсора мыши
-            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             HoverOverAButton.Play();//Воспроизводим данный аудиофайл
         }
 
@@ -79,7 +79,7 @@ namespace Dyplomka
 
         private void buttonInput_Click(object sender, EventArgs e)
         {
-            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             PressingButton.Play();//Воспроизводим данный аудиофайл
             PressingButton.PlaySync();
 
@@ -124,13 +124,13 @@ namespace Dyplomka
 
         private void buttonInput_MouseEnter(object sender, EventArgs e)
         {
-            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             HoverOverAButton.Play();//Воспроизводим данный аудиофайл
         }
 
         private void labelCreateAnAccount_Click(object sender, EventArgs e)
         {
-            SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             CloseAppButton.Play();//Воспроизводим данный аудиофайл
             CloseAppButton.PlaySync();//Воспроизводим данный аудиофайл первее функции "Application.Exit"
 
@@ -142,7 +142,7 @@ namespace Dyplomka
         private void labelCreateAnAccount_MouseEnter(object sender, EventArgs e)
         {
             labelCreateAnAccount.ForeColor = Color.Green;//Цвет кнопки при наведении курсора мыши
-            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             HoverOverAButton.Play();//Воспроизводим данный аудиофайл
         }
 
@@ -153,7 +153,7 @@ namespace Dyplomka
 
         private void labelUsers_Click(object sender, EventArgs e)
         {
-            SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             CloseAppButton.Play();//Воспроизводим данный аудиофайл
             CloseAppButton.PlaySync();//Воспроизводим данный аудиофайл первее функции "Application.Exit"
 
@@ -165,13 +165,34 @@ namespace Dyplomka
         private void labelUsers_MouseEnter(object sender, EventArgs e)
         {
             labelUsers.ForeColor = Color.Green;//Цвет кнопки при наведении курсора мыши
-            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Задание №2 (Подготовка к ВКР)\Программное приложения для ведения учета работы школьной столовой\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             HoverOverAButton.Play();//Воспроизводим данный аудиофайл
         }
 
         private void labelUsers_MouseLeave(object sender, EventArgs e)
         {
             labelUsers.ForeColor = Color.White;//Цвет кнопки при убирании курсора мыши
+        }
+
+        private void labelDeveloper_Click(object sender, EventArgs e)
+        {
+            SoundPlayer CloseAppButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Close app button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " CloseAppButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            CloseAppButton.Play();//Воспроизводим данный аудиофайл
+            CloseAppButton.PlaySync();//Воспроизводим данный аудиофайл первее функции "Application.Exit"
+
+            System.Diagnostics.Process.Start("https://valeevrustam17.wixsite.com/mysite");
+        }
+
+        private void labelDeveloper_MouseEnter(object sender, EventArgs e)
+        {
+            labelDeveloper.ForeColor = Color.Green;//Цвет кнопки при наведении курсора мыши
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект " HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
+
+        private void labelDeveloper_MouseLeave(object sender, EventArgs e)
+        {
+            labelDeveloper.ForeColor = Color.White;//Цвет кнопки при убирании курсора мыши
         }
     }
 }

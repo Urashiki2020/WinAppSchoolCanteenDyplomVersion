@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.labelDeveloper = new System.Windows.Forms.Label();
             this.labelUsers = new System.Windows.Forms.Label();
             this.labelCreateAnAccount = new System.Windows.Forms.Label();
             this.buttonInput = new System.Windows.Forms.Button();
@@ -48,6 +49,7 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
+            this.MainPanel.Controls.Add(this.labelDeveloper);
             this.MainPanel.Controls.Add(this.labelUsers);
             this.MainPanel.Controls.Add(this.labelCreateAnAccount);
             this.MainPanel.Controls.Add(this.buttonInput);
@@ -64,13 +66,28 @@
             this.MainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPanel_MouseDown);
             this.MainPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPanel_MouseMove);
             // 
+            // labelDeveloper
+            // 
+            this.labelDeveloper.AutoSize = true;
+            this.labelDeveloper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDeveloper.ForeColor = System.Drawing.Color.White;
+            this.labelDeveloper.Location = new System.Drawing.Point(50, 401);
+            this.labelDeveloper.Name = "labelDeveloper";
+            this.labelDeveloper.Size = new System.Drawing.Size(290, 25);
+            this.labelDeveloper.TabIndex = 8;
+            this.labelDeveloper.Text = "Информация о разработчике";
+            this.labelDeveloper.Click += new System.EventHandler(this.labelDeveloper_Click);
+            this.labelDeveloper.MouseEnter += new System.EventHandler(this.labelDeveloper_MouseEnter);
+            this.labelDeveloper.MouseLeave += new System.EventHandler(this.labelDeveloper_MouseLeave);
+            // 
             // labelUsers
             // 
             this.labelUsers.AutoSize = true;
             this.labelUsers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelUsers.ForeColor = System.Drawing.Color.White;
-            this.labelUsers.Location = new System.Drawing.Point(120, 376);
+            this.labelUsers.Location = new System.Drawing.Point(122, 348);
             this.labelUsers.Name = "labelUsers";
             this.labelUsers.Size = new System.Drawing.Size(147, 25);
             this.labelUsers.TabIndex = 7;
@@ -85,7 +102,7 @@
             this.labelCreateAnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelCreateAnAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCreateAnAccount.ForeColor = System.Drawing.Color.White;
-            this.labelCreateAnAccount.Location = new System.Drawing.Point(97, 401);
+            this.labelCreateAnAccount.Location = new System.Drawing.Point(99, 373);
             this.labelCreateAnAccount.Name = "labelCreateAnAccount";
             this.labelCreateAnAccount.Size = new System.Drawing.Size(190, 25);
             this.labelCreateAnAccount.TabIndex = 6;
@@ -104,7 +121,7 @@
             this.buttonInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInput.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonInput.ForeColor = System.Drawing.Color.White;
-            this.buttonInput.Location = new System.Drawing.Point(113, 317);
+            this.buttonInput.Location = new System.Drawing.Point(114, 292);
             this.buttonInput.Name = "buttonInput";
             this.buttonInput.Size = new System.Drawing.Size(163, 53);
             this.buttonInput.TabIndex = 5;
@@ -116,7 +133,7 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxPassword.Location = new System.Drawing.Point(102, 229);
+            this.textBoxPassword.Location = new System.Drawing.Point(102, 203);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(237, 57);
             this.textBoxPassword.TabIndex = 4;
@@ -125,7 +142,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Dyplomka.Properties.Resources.Password;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 229);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 203);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -135,7 +152,7 @@
             // textBoxLogin
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxLogin.Location = new System.Drawing.Point(102, 133);
+            this.textBoxLogin.Location = new System.Drawing.Point(103, 118);
             this.textBoxLogin.Multiline = true;
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(237, 64);
@@ -144,7 +161,7 @@
             // pictureBoxUser
             // 
             this.pictureBoxUser.Image = global::Dyplomka.Properties.Resources.User;
-            this.pictureBoxUser.Location = new System.Drawing.Point(31, 133);
+            this.pictureBoxUser.Location = new System.Drawing.Point(32, 118);
             this.pictureBoxUser.Name = "pictureBoxUser";
             this.pictureBoxUser.Size = new System.Drawing.Size(64, 64);
             this.pictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,5 +240,6 @@
         private System.Windows.Forms.Button buttonInput;
         private System.Windows.Forms.Label labelCreateAnAccount;
         private System.Windows.Forms.Label labelUsers;
+        private System.Windows.Forms.Label labelDeveloper;
     }
 }
