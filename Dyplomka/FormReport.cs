@@ -24,8 +24,8 @@ namespace Dyplomka
 
         private void FormReport_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "SchoolCanteenDataSet5.Orders". При необходимости она может быть перемещена или удалена.
-            this.ordersTableAdapter.Fill(this.SchoolCanteenDataSet5.Orders);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet3.Orders_". При необходимости она может быть перемещена или удалена.
+            this.orders_TableAdapter.Fill(this.schoolCanteenDataSet3.Orders_);
             this.reportViewer1.RefreshReport();
         }
 

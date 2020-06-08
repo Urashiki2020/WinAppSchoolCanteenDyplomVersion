@@ -17,11 +17,11 @@ namespace Dyplomka
             InitializeComponent();
 
             this.StartPosition = FormStartPosition.CenterScreen;//Отображает форму в центре экрана при запуске
-        }
 
-        private void FormGreeting_Load(object sender, EventArgs e)
-        {
-
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.AllowTransparency = true;
+            this.BackColor = Color.AliceBlue;//цвет фона  
+            this.TransparencyKey = this.BackColor;//он же будет заменен на прозрачный цвет
         }
     }
 }

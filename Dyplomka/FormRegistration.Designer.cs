@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistration));
             this.MainPanel1 = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
             this.comboBoxFillingInRoles = new System.Windows.Forms.ComboBox();
@@ -96,7 +97,9 @@
             this.comboBoxFillingInRoles.FormattingEnabled = true;
             this.comboBoxFillingInRoles.Items.AddRange(new object[] {
             "employee",
-            "client"});
+            "client",
+            "5th grade teacher",
+            "Courier"});
             this.comboBoxFillingInRoles.Location = new System.Drawing.Point(399, 244);
             this.comboBoxFillingInRoles.Name = "comboBoxFillingInRoles";
             this.comboBoxFillingInRoles.Size = new System.Drawing.Size(121, 24);
@@ -252,6 +255,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.MainPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormRegistration";
             this.Text = "FormRegistration";
             this.MainPanel1.ResumeLayout(false);

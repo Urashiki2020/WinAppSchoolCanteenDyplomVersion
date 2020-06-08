@@ -94,6 +94,14 @@ namespace Dyplomka
                 string commandClient = "SELECT*FROM Users WHERE login='" + textBoxLogin.Text + "' AND password='" + textBoxPassword.Text + "'AND role='client'";
                 SqlCommand checkClient = new SqlCommand(commandClient, connection);
 
+                //Проверка совпадения логин-пароль-роль для "Курьер"
+                string commandCourier = "SELECT*FROM Users WHERE login='" + textBoxLogin.Text + "' AND password='" + textBoxPassword.Text + "'AND role='Courier'";
+                SqlCommand checkCourier = new SqlCommand(commandCourier, connection);
+
+                //Проверка совпадения логин-пароль-роль для "Классный руководитель 5-класса"
+                string commandClassTeacherOfThe5thGrade = "SELECT*FROM Users WHERE login='" + textBoxLogin.Text + "' AND password='" + textBoxPassword.Text + "'AND role='5th grade teacher'";
+                SqlCommand checkTeacher = new SqlCommand(commandClassTeacherOfThe5thGrade, connection);
+
                 connection.Open();//Обращаемся к объекту "connection" и обращаемся к функции "Open", которая позволит открыть соединение с базой данных SQL Server
                 if (checkEmployee.ExecuteScalar() != null)//Если логин - пароль сотрудника совпадают то переход на форму "Главное меню сотрудника"
                 {
@@ -108,6 +116,20 @@ namespace Dyplomka
                         this.Hide();//Скрываем текущее окно
                         FormClientMainMenu formClientMainMenu = new FormClientMainMenu();//Обращаемся к классу "FormClientMainMenu", на его основе создаем объект "formClientMainMenu" и выделяем под него память
                         formClientMainMenu.Show();//Обращаемся к объекту "formClientMainMenu" и обращаемся к функции "Show", которая позволит нам открыть это окно
+                    }
+                    else
+                    if (checkCourier.ExecuteScalar() != null)
+                    {
+                        this.Hide();
+                        FormCourierMainMenu formCourierMainMenu = new FormCourierMainMenu();
+                        formCourierMainMenu.Show();
+                    }
+                    else
+                    if (checkTeacher.ExecuteScalar() != null)
+                    {
+                        this.Hide();
+                        FormClassTeacherOfThe5thGrade formClassTeacherOfThe5thGrade = new FormClassTeacherOfThe5thGrade();
+                        formClassTeacherOfThe5thGrade.Show();
                     }
                     else
                     {

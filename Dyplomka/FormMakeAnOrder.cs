@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;//Данная библиотека позволяет использовать функции, команды и методы для работы с базой данных
 using System.Data.SqlClient;//Поставщик данных платформы .NET для SQL Server
 using System.Data.Odbc;//Протокол используемый для подключения базы данных Microsoft SQL Server
 using System.Media;//Данная библиотека содержит классы для воспроизведения звуковых файлов и работы с системными звуками
@@ -28,25 +27,22 @@ namespace Dyplomka
 
         private void FormMakeAnOrder_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet2.Users". При необходимости она может быть перемещена или удалена.
-            this.usersTableAdapter1.Fill(this.schoolCanteenDataSet2.Users);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet5.Orders". При необходимости она может быть перемещена или удалена.
-            this.ordersTableAdapter2.Fill(this.schoolCanteenDataSet5.Orders);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet1.Dining_room_menu". При необходимости она может быть перемещена или удалена.
-            this.dining_room_menuTableAdapter.Fill(this.schoolCanteenDataSet1.Dining_room_menu);
-
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet3.Users". При необходимости она может быть перемещена или удалена.
+            this.usersTableAdapter2.Fill(this.schoolCanteenDataSet3.Users);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet3.Dining_room_menu". При необходимости она может быть перемещена или удалена.
+            this.dining_room_menuTableAdapter1.Fill(this.schoolCanteenDataSet3.Dining_room_menu);
         }
 
         private void buttonTakeAnOrder_Click(object sender, EventArgs e)
         {
             SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();
 
             ClassIniDataBase classIniDataBase = new ClassIniDataBase();
-            SqlCommand command = new SqlCommand("INSERT INTO [Orders] ([Клиент], [Продукт], [Цена], [Количество]) Values (@Client, @Product, @Price, @Quantity)", classIniDataBase.GetConnection());
+            SqlCommand command = new SqlCommand("INSERT INTO [Orders] ([Клиент], [Продукт], [Количество]) Values (@Client, @Product, @Quantity)", classIniDataBase.GetConnection());
             command.Parameters.Add("@Client", SqlDbType.VarChar).Value = comboBoxClient.Text;
             command.Parameters.Add("@Product", SqlDbType.VarChar).Value = comboBoxNameOfProduct.Text;
-            command.Parameters.Add("@Price", SqlDbType.VarChar).Value = comboBoxPrice.Text;
             command.Parameters.Add("@Quantity", SqlDbType.VarChar).Value = textBoxQuantity.Text;
 
             classIniDataBase.OpenConnection();
@@ -63,6 +59,7 @@ namespace Dyplomka
         {
             SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();//Воспроизводим данный аудиофайл первее чем откроется форма
 
             this.Hide();
             FormClientMainMenu formClientMainMenu = new FormClientMainMenu();
@@ -154,6 +151,11 @@ namespace Dyplomka
         {
             //Идентификация пользователя
             MessageBox.Show(comboBoxClient.SelectedValue.ToString());
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

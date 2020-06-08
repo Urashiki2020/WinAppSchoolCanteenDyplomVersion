@@ -24,9 +24,8 @@ namespace Dyplomka
 
         private void FormDiningRoomMenu_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet1.Dining_room_menu". При необходимости она может быть перемещена или удалена.
-            this.dining_room_menuTableAdapter.Fill(this.schoolCanteenDataSet1.Dining_room_menu);
-
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet3.Dining_room_menu". При необходимости она может быть перемещена или удалена.
+            this.dining_room_menuTableAdapter1.Fill(this.schoolCanteenDataSet3.Dining_room_menu);
         }
 
         private void buttonTakeAnOrder_Click(object sender, EventArgs e)
@@ -35,7 +34,7 @@ namespace Dyplomka
             PressingButton.Play();//Воспроизводим данный аудиофайл
             PressingButton.PlaySync();//Воспроизводим данный аудиофайл первее аудиофайла "ProgramStart"
 
-            dining_room_menuTableAdapter.Update(schoolCanteenDataSet1);//Обновление данных в базе
+            dining_room_menuTableAdapter1.Update(schoolCanteenDataSet3);//Обновление данных в базе
             MessageBox.Show("Продукт добавлен в базу данных");
         }
 
@@ -46,7 +45,7 @@ namespace Dyplomka
             PressingButton.PlaySync();//Воспроизводим данный аудиофайл первее аудиофайла "ProgramStart"
 
             dataGridView1.Rows.RemoveAt(dataGridView1.CurrentCell.RowIndex);//Удаление записи
-            dining_room_menuTableAdapter.Update(schoolCanteenDataSet1);//Обновление данных в базе
+            dining_room_menuTableAdapter1.Update(schoolCanteenDataSet3);//Обновление данных в базе
             MessageBox.Show("Продукт удален с базы данных");
         }
 

@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +47,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E815B6B68791D4D022C5834D8C993EFDDD40CFB0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Dyplomka_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -63,6 +91,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -75,11 +104,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassIniDataBase.cs" />
+    <Compile Include="FormAttendanceOf5thGradeStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAttendanceOf5thGradeStudents.Designer.cs">
+      <DependentUpon>FormAttendanceOf5thGradeStudents.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAuthorization.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAuthorization.Designer.cs">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClass5.Designer.cs">
+      <DependentUpon>FormClass5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClasses.Designer.cs">
+      <DependentUpon>FormClasses.cs</DependentUpon>
     </Compile>
     <Compile Include="FormClientMainMenu.cs">
       <SubType>Form</SubType>
@@ -87,11 +134,23 @@
     <Compile Include="FormClientMainMenu.Designer.cs">
       <DependentUpon>FormClientMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCourierMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCourierMainMenu.Designer.cs">
+      <DependentUpon>FormCourierMainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDiningRoomMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDiningRoomMenu.Designer.cs">
       <DependentUpon>FormDiningRoomMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditUsers.Designer.cs">
+      <DependentUpon>FormEditUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEmployeeMainMenu.cs">
       <SubType>Form</SubType>
@@ -105,11 +164,29 @@
     <Compile Include="FormGreeting.Designer.cs">
       <DependentUpon>FormGreeting.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListOf5thGradeStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListOf5thGradeStudents.Designer.cs">
+      <DependentUpon>FormListOf5thGradeStudents.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMakeAnOrder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMakeAnOrder.Designer.cs">
       <DependentUpon>FormMakeAnOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderedProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderedProduct.Designer.cs">
+      <DependentUpon>FormOrderedProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrdersOfTheEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrdersOfTheEmployees.Designer.cs">
+      <DependentUpon>FormOrdersOfTheEmployees.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistration.cs">
       <SubType>Form</SubType>
@@ -128,6 +205,18 @@
     </Compile>
     <Compile Include="FormSalesOrder.Designer.cs">
       <DependentUpon>FormSalesOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClassTeacherOfThe5thGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClassTeacherOfThe5thGrade.Designer.cs">
+      <DependentUpon>FormClassTeacherOfThe5thGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTheReportOfOrdersOfTheEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTheReportOfOrdersOfTheEmployees.Designer.cs">
+      <DependentUpon>FormTheReportOfOrdersOfTheEmployees.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUsers.cs">
       <SubType>Form</SubType>
@@ -152,6 +241,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolCanteenDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SchoolCanteenDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SchoolCanteenDataSet5.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -164,14 +258,29 @@
       <DependentUpon>Slider.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="FormAttendanceOf5thGradeStudents.resx">
+      <DependentUpon>FormAttendanceOf5thGradeStudents.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass5.resx">
+      <DependentUpon>FormClass5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClasses.resx">
+      <DependentUpon>FormClasses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormClientMainMenu.resx">
       <DependentUpon>FormClientMainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCourierMainMenu.resx">
+      <DependentUpon>FormCourierMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDiningRoomMenu.resx">
       <DependentUpon>FormDiningRoomMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditUsers.resx">
+      <DependentUpon>FormEditUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmployeeMainMenu.resx">
       <DependentUpon>FormEmployeeMainMenu.cs</DependentUpon>
@@ -179,8 +288,17 @@
     <EmbeddedResource Include="FormGreeting.resx">
       <DependentUpon>FormGreeting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormListOf5thGradeStudents.resx">
+      <DependentUpon>FormListOf5thGradeStudents.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMakeAnOrder.resx">
       <DependentUpon>FormMakeAnOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderedProduct.resx">
+      <DependentUpon>FormOrderedProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrdersOfTheEmployees.resx">
+      <DependentUpon>FormOrdersOfTheEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
@@ -190,6 +308,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSalesOrder.resx">
       <DependentUpon>FormSalesOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClassTeacherOfThe5thGrade.resx">
+      <DependentUpon>FormClassTeacherOfThe5thGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTheReportOfOrdersOfTheEmployees.resx">
+      <DependentUpon>FormTheReportOfOrdersOfTheEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUsers.resx">
       <DependentUpon>FormUsers.cs</DependentUpon>
@@ -208,6 +332,7 @@
     <EmbeddedResource Include="Slider.resx">
       <DependentUpon>Slider.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TheReportOfOrdersOfTheEmployees.rdlc" />
     <None Include="ActivityManager\ActivityManager.exe.config" />
     <None Include="ActivityManager\AmEditor.exe.config" />
     <None Include="ActivityManager\AmEditor.ignorelist" />
@@ -219,6 +344,7 @@
     <None Include="ActivityManager\lang\sql_module.en" />
     <None Include="ActivityManager\mssql.synax" />
     <None Include="ActivityManager\plugins\Except.dic" />
+    <None Include="Dyplomka_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -261,6 +387,17 @@
     </None>
     <None Include="SchoolCanteenDataSet2.xss">
       <DependentUpon>SchoolCanteenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolCanteenDataSet3.xsc">
+      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolCanteenDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolCanteenDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolCanteenDataSet3.xss">
+      <DependentUpon>SchoolCanteenDataSet3.xsd</DependentUpon>
     </None>
     <None Include="SchoolCanteenDataSet5.xsc">
       <DependentUpon>SchoolCanteenDataSet5.xsd</DependentUpon>
@@ -364,6 +501,21 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

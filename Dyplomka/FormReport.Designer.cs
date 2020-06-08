@@ -29,32 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource10 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.OrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.SchoolCanteenDataSet5 = new Dyplomka.SchoolCanteenDataSet5();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReport));
+            this.ordersBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.schoolCanteenDataSet3 = new Dyplomka.SchoolCanteenDataSet3();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.labelClosingTheForm = new System.Windows.Forms.Label();
             this.TopPanel10 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.MainPanel10 = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ordersTableAdapter = new Dyplomka.SchoolCanteenDataSet5TableAdapters.OrdersTableAdapter();
-            this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.OrdersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SchoolCanteenDataSet5)).BeginInit();
+            this.orders_TableAdapter = new Dyplomka.SchoolCanteenDataSet3TableAdapters.Orders_TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
             this.MainPanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
-            // SchoolCanteenDataSet5
+            // ordersBindingSource4
             // 
-            this.SchoolCanteenDataSet5.DataSetName = "SchoolCanteenDataSet5";
-            this.SchoolCanteenDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.ordersBindingSource4.DataMember = "Orders ";
+            this.ordersBindingSource4.DataSource = this.schoolCanteenDataSet3;
+            // 
+            // schoolCanteenDataSet3
+            // 
+            this.schoolCanteenDataSet3.DataSetName = "SchoolCanteenDataSet3";
+            this.schoolCanteenDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel2
             // 
@@ -66,11 +67,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(936, 100);
             this.panel2.TabIndex = 0;
-            // 
-            // ordersBindingSource1
-            // 
-            this.ordersBindingSource1.DataMember = "Orders";
-            this.ordersBindingSource1.DataSource = this.SchoolCanteenDataSet5;
             // 
             // labelClosingTheForm
             // 
@@ -136,9 +132,9 @@
             // 
             // reportViewer1
             // 
-            reportDataSource10.Name = "DataSetCanteenOperation";
-            reportDataSource10.Value = this.ordersBindingSource3;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource10);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.ordersBindingSource4;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Dyplomka.ReportCanteenOperationReport.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(10, 106);
             this.reportViewer1.Name = "reportViewer1";
@@ -150,15 +146,9 @@
             // 
             this.ordersTableAdapter.ClearBeforeFill = true;
             // 
-            // ordersBindingSource2
+            // orders_TableAdapter
             // 
-            this.ordersBindingSource2.DataMember = "Orders";
-            this.ordersBindingSource2.DataSource = this.SchoolCanteenDataSet5;
-            // 
-            // ordersBindingSource3
-            // 
-            this.ordersBindingSource3.DataMember = "Orders";
-            this.ordersBindingSource3.DataSource = this.SchoolCanteenDataSet5;
+            this.orders_TableAdapter.ClearBeforeFill = true;
             // 
             // FormReport
             // 
@@ -167,33 +157,29 @@
             this.ClientSize = new System.Drawing.Size(936, 662);
             this.Controls.Add(this.MainPanel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormReport";
             this.Text = "FormReport";
             this.Load += new System.EventHandler(this.FormReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.OrdersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SchoolCanteenDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
             this.MainPanel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource OrdersBindingSource;
-        private SchoolCanteenDataSet5 SchoolCanteenDataSet5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelClosingTheForm;
         private System.Windows.Forms.Label TopPanel10;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Panel MainPanel10;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource ordersBindingSource1;
         private SchoolCanteenDataSet5TableAdapters.OrdersTableAdapter ordersTableAdapter;
-        private System.Windows.Forms.BindingSource ordersBindingSource2;
-        private System.Windows.Forms.BindingSource ordersBindingSource3;
+        private SchoolCanteenDataSet3 schoolCanteenDataSet3;
+        private System.Windows.Forms.BindingSource ordersBindingSource4;
+        private SchoolCanteenDataSet3TableAdapters.Orders_TableAdapter orders_TableAdapter;
     }
 }

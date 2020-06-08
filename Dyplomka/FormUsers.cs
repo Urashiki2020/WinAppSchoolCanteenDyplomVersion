@@ -114,18 +114,11 @@ namespace Dyplomka
 
         private void FormUsers_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet3.Users". При необходимости она может быть перемещена или удалена.
+            this.usersTableAdapter1.Fill(this.schoolCanteenDataSet3.Users);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "schoolCanteenDataSet.Users". При необходимости она может быть перемещена или удалена.
             this.usersTableAdapter.Fill(this.schoolCanteenDataSet.Users);
 
-        }
-
-        private void comboBoxUsers_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //Устанавливаем фильтр в таблицу "Users"
-            usersBindingSource1.Filter = "[login] =\'" + comboBoxUsers + "\'";
-
-            //Идентификация пользователя
-            MessageBox.Show(comboBoxUsers.SelectedValue.ToString());
         }
     }
 }

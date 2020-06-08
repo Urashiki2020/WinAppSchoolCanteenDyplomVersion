@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAuthorization));
             this.MainPanel = new System.Windows.Forms.Panel();
             this.labelDeveloper = new System.Windows.Forms.Label();
             this.labelUsers = new System.Windows.Forms.Label();
@@ -215,6 +216,7 @@
             this.ClientSize = new System.Drawing.Size(388, 435);
             this.Controls.Add(this.MainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAuthorization";
             this.Text = "FormAuthorization";
             this.MainPanel.ResumeLayout(false);

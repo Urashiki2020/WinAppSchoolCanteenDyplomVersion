@@ -61,11 +61,11 @@
             this.labelGreeting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelGreeting.Font = new System.Drawing.Font("Ink Free", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGreeting.ForeColor = System.Drawing.Color.White;
-            this.labelGreeting.Location = new System.Drawing.Point(65, 235);
+            this.labelGreeting.Location = new System.Drawing.Point(3, 240);
             this.labelGreeting.Name = "labelGreeting";
-            this.labelGreeting.Size = new System.Drawing.Size(654, 41);
+            this.labelGreeting.Size = new System.Drawing.Size(727, 41);
             this.labelGreeting.TabIndex = 0;
-            this.labelGreeting.Text = "Click LCM to start working with the program";
+            this.labelGreeting.Text = "Нажмите ЛКМ для начала работы программы";
             this.labelGreeting.Click += new System.EventHandler(this.labelGreeting_Click);
             this.labelGreeting.MouseEnter += new System.EventHandler(this.labelGreeting_MouseEnter);
             this.labelGreeting.MouseLeave += new System.EventHandler(this.labelGreeting_MouseLeave);

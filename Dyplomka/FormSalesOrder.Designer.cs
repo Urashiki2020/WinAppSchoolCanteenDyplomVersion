@@ -29,56 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSalesOrder));
             this.MainPanel6 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idproductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.клиентDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.продуктDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ordersBindingSource11 = new System.Windows.Forms.BindingSource(this.components);
-            this.schoolCanteenDataSet5 = new Dyplomka.SchoolCanteenDataSet5();
+            this.ordersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.schoolCanteenDataSet3 = new Dyplomka.SchoolCanteenDataSet3();
             this.buttonReport = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelClosingTheForm = new System.Windows.Forms.Label();
             this.TopPanel6 = new System.Windows.Forms.Label();
-            this.ordersBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.schoolCanteenDataSet1 = new Dyplomka.SchoolCanteenDataSet1();
-            this.ordersTableAdapter = new Dyplomka.SchoolCanteenDataSet1TableAdapters.OrdersTableAdapter();
-            this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.ordersBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
-            this.schoolCanteenDataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
-            this.schoolCanteenDataSet3BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersBindingSource9 = new System.Windows.Forms.BindingSource(this.components);
             this.schoolCanteenDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ordersBindingSource10 = new System.Windows.Forms.BindingSource(this.components);
             this.ordersTableAdapter4 = new Dyplomka.SchoolCanteenDataSet5TableAdapters.OrdersTableAdapter();
+            this.orders_TableAdapter = new Dyplomka.SchoolCanteenDataSet3TableAdapters.Orders_TableAdapter();
             this.MainPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet5)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet4BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet5BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource10)).BeginInit();
             this.SuspendLayout();
@@ -101,14 +74,14 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idproductDataGridViewTextBoxColumn,
             this.клиентDataGridViewTextBoxColumn,
             this.продуктDataGridViewTextBoxColumn,
-            this.ценаDataGridViewTextBoxColumn,
             this.количествоDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.ordersBindingSource11;
+            this.dataGridView1.DataSource = this.ordersBindingSource3;
             this.dataGridView1.Location = new System.Drawing.Point(10, 106);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -123,7 +96,6 @@
             this.idproductDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idproductDataGridViewTextBoxColumn.Name = "idproductDataGridViewTextBoxColumn";
             this.idproductDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idproductDataGridViewTextBoxColumn.Width = 125;
             // 
             // клиентDataGridViewTextBoxColumn
             // 
@@ -131,7 +103,6 @@
             this.клиентDataGridViewTextBoxColumn.HeaderText = "Клиент";
             this.клиентDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.клиентDataGridViewTextBoxColumn.Name = "клиентDataGridViewTextBoxColumn";
-            this.клиентDataGridViewTextBoxColumn.Width = 125;
             // 
             // продуктDataGridViewTextBoxColumn
             // 
@@ -139,15 +110,6 @@
             this.продуктDataGridViewTextBoxColumn.HeaderText = "Продукт";
             this.продуктDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.продуктDataGridViewTextBoxColumn.Name = "продуктDataGridViewTextBoxColumn";
-            this.продуктDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ценаDataGridViewTextBoxColumn
-            // 
-            this.ценаDataGridViewTextBoxColumn.DataPropertyName = "Цена";
-            this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
-            this.ценаDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
-            this.ценаDataGridViewTextBoxColumn.Width = 125;
             // 
             // количествоDataGridViewTextBoxColumn
             // 
@@ -155,17 +117,16 @@
             this.количествоDataGridViewTextBoxColumn.HeaderText = "Количество";
             this.количествоDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.количествоDataGridViewTextBoxColumn.Name = "количествоDataGridViewTextBoxColumn";
-            this.количествоDataGridViewTextBoxColumn.Width = 125;
             // 
-            // ordersBindingSource11
+            // ordersBindingSource3
             // 
-            this.ordersBindingSource11.DataMember = "Orders";
-            this.ordersBindingSource11.DataSource = this.schoolCanteenDataSet5;
+            this.ordersBindingSource3.DataMember = "Orders ";
+            this.ordersBindingSource3.DataSource = this.schoolCanteenDataSet3;
             // 
-            // schoolCanteenDataSet5
+            // schoolCanteenDataSet3
             // 
-            this.schoolCanteenDataSet5.DataSetName = "SchoolCanteenDataSet5";
-            this.schoolCanteenDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.schoolCanteenDataSet3.DataSetName = "SchoolCanteenDataSet3";
+            this.schoolCanteenDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // buttonReport
             // 
@@ -245,37 +206,13 @@
             this.TopPanel6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPanel6_MouseDown);
             this.TopPanel6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel6_MouseMove);
             // 
-            // ordersBindingSource
-            // 
-            this.ordersBindingSource.DataMember = "Orders";
-            this.ordersBindingSource.DataSource = this.schoolCanteenDataSet1;
-            // 
-            // schoolCanteenDataSet1
-            // 
-            this.schoolCanteenDataSet1.DataSetName = "SchoolCanteenDataSet1";
-            this.schoolCanteenDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ordersTableAdapter
-            // 
-            this.ordersTableAdapter.ClearBeforeFill = true;
-            // 
-            // ordersBindingSource7
-            // 
-            this.ordersBindingSource7.DataMember = "Orders";
-            // 
-            // schoolCanteenDataSet5BindingSource
-            // 
-            this.schoolCanteenDataSet5BindingSource.DataSource = this.schoolCanteenDataSet5;
-            this.schoolCanteenDataSet5BindingSource.Position = 0;
-            // 
-            // ordersBindingSource10
-            // 
-            this.ordersBindingSource10.DataMember = "Orders";
-            this.ordersBindingSource10.DataSource = this.schoolCanteenDataSet5;
-            // 
             // ordersTableAdapter4
             // 
             this.ordersTableAdapter4.ClearBeforeFill = true;
+            // 
+            // orders_TableAdapter
+            // 
+            this.orders_TableAdapter.ClearBeforeFill = true;
             // 
             // FormSalesOrder
             // 
@@ -284,28 +221,16 @@
             this.ClientSize = new System.Drawing.Size(983, 458);
             this.Controls.Add(this.MainPanel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSalesOrder";
             this.Text = "FormSalesOrder";
             this.Load += new System.EventHandler(this.FormSalesOrder_Load);
             this.MainPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet4BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet3BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolCanteenDataSet5BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource10)).EndInit();
             this.ResumeLayout(false);
@@ -319,32 +244,17 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelClosingTheForm;
         private System.Windows.Forms.Label TopPanel6;
-        private SchoolCanteenDataSet1 schoolCanteenDataSet1;
-        private System.Windows.Forms.BindingSource ordersBindingSource;
-        private SchoolCanteenDataSet1TableAdapters.OrdersTableAdapter ordersTableAdapter;
-        private System.Windows.Forms.BindingSource ordersBindingSource1;
-        private System.Windows.Forms.BindingSource ordersBindingSource2;
-        private System.Windows.Forms.BindingSource ordersBindingSource4;
-        private System.Windows.Forms.BindingSource ordersBindingSource3;
-        private System.Windows.Forms.BindingSource ordersBindingSource5;
-        private System.Windows.Forms.BindingSource ordersBindingSource6;
-        private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.Button buttonReport;
-        private System.Windows.Forms.BindingSource ordersBindingSource7;
-        private System.Windows.Forms.BindingSource ordersBindingSource8;
-        private System.Windows.Forms.BindingSource schoolCanteenDataSet4BindingSource;
-        private System.Windows.Forms.BindingSource ordersBindingSource9;
-        private System.Windows.Forms.BindingSource schoolCanteenDataSet3BindingSource;
         private System.Windows.Forms.BindingSource schoolCanteenDataSet5BindingSource;
-        private SchoolCanteenDataSet5 schoolCanteenDataSet5;
         private System.Windows.Forms.BindingSource ordersBindingSource10;
         private SchoolCanteenDataSet5TableAdapters.OrdersTableAdapter ordersTableAdapter4;
+        private SchoolCanteenDataSet3 schoolCanteenDataSet3;
+        private SchoolCanteenDataSet3TableAdapters.Orders_TableAdapter orders_TableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn клиентDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn продуктDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ценаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn количествоDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource ordersBindingSource11;
+        private System.Windows.Forms.BindingSource ordersBindingSource3;
     }
 }

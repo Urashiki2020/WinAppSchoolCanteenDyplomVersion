@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClientMainMenu));
             this.MainPanel3 = new System.Windows.Forms.Panel();
             this.buttonMakeAnOrder = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
@@ -137,6 +138,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.MainPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormClientMainMenu";
             this.Text = "FormClientMainMenu";
             this.MainPanel3.ResumeLayout(false);

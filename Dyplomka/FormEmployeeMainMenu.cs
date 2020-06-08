@@ -121,5 +121,39 @@ namespace Dyplomka
             SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
             HoverOverAButton.Play();//Воспроизводим данный аудиофайл
         }
+
+        private void buttonClasses_Click(object sender, EventArgs e)
+        {
+            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();
+
+            this.Hide();
+            FormClasses formClasses = new FormClasses();
+            formClasses.Show();
+        }
+
+        private void buttonClasses_MouseEnter(object sender, EventArgs e)
+        {
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
+
+        private void buttonUsers_MouseEnter(object sender, EventArgs e)
+        {
+            SoundPlayer HoverOverAButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Hover over a button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "HoverOverAButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            HoverOverAButton.Play();//Воспроизводим данный аудиофайл
+        }
+
+        private void buttonUsers_Click(object sender, EventArgs e)
+        {
+            SoundPlayer PressingButton = new SoundPlayer(@"F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Sounds\Звуки для моей программы\Pressing button.wav");//Обращаемся к классу "SoundPlayer" на его основе создаем объект "PressingButton", указываем путь к ауйдиофайлу, имя аудиофайла и его формат
+            PressingButton.Play();//Воспроизводим данный аудиофайл
+            PressingButton.PlaySync();
+
+            this.Hide();
+            FormEditUsers formEditUsers = new FormEditUsers();
+            formEditUsers.Show();
+        }
     }
 }

@@ -6,10 +6,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.302cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>3.302cm</Width>
+              <Width>3.09033cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -25,7 +22,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Цена</Value>
+                              <Value>Количество</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -57,85 +54,11 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox3">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Количество</Value>
-                              <Style>
-                                <FontSize>11pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Right</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox3</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>None</Style>
-                        </Border>
-                        <BottomBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                          <Width>1pt</Width>
-                        </BottomBorder>
-                        <BackgroundColor>White</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
               </TablixCells>
             </TablixRow>
             <TablixRow>
               <Height>0.6cm</Height>
               <TablixCells>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Цена">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!Цена.Value</Value>
-                              <Style>
-                                <FontWeight>Normal</FontWeight>
-                                <Color>#333333</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Цена</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>None</Style>
-                        </Border>
-                        <BackgroundColor>White</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Количество">
@@ -176,16 +99,15 @@
         <TablixColumnHierarchy>
           <TablixMembers>
             <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
           <TablixMembers>
             <TablixMember>
               <TablixHeader>
-                <Size>3.302cm</Size>
+                <Size>3.09033cm</Size>
                 <CellContents>
-                  <Textbox Name="Textbox9">
+                  <Textbox Name="Textbox7">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
@@ -205,7 +127,7 @@
                         </Style>
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox9</rd:DefaultName>
+                    <rd:DefaultName>Textbox7</rd:DefaultName>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -227,9 +149,9 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>3.302cm</Size>
+                    <Size>3.09033cm</Size>
                     <CellContents>
-                      <Textbox Name="Textbox7">
+                      <Textbox Name="Textbox5">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
@@ -249,7 +171,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox7</rd:DefaultName>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -271,9 +193,9 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>3.302cm</Size>
+                        <Size>3.09033cm</Size>
                         <CellContents>
-                          <Textbox Name="Textbox5">
+                          <Textbox Name="Textbox3">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
@@ -293,7 +215,7 @@
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox5</rd:DefaultName>
+                            <rd:DefaultName>Textbox3</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>None</Style>
@@ -319,7 +241,6 @@
                   </TablixMembers>
                 </TablixMember>
               </TablixMembers>
-              <KeepWithGroup>After</KeepWithGroup>
             </TablixMember>
             <TablixMember>
               <Group Name="id_product">
@@ -333,7 +254,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>3.302cm</Size>
+                <Size>3.09033cm</Size>
                 <CellContents>
                   <Textbox Name="id_product">
                     <CanGrow>true</CanGrow>
@@ -384,7 +305,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>3.302cm</Size>
+                    <Size>3.09033cm</Size>
                     <CellContents>
                       <Textbox Name="Клиент">
                         <CanGrow>true</CanGrow>
@@ -435,7 +356,7 @@
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>3.302cm</Size>
+                        <Size>3.09033cm</Size>
                         <CellContents>
                           <Textbox Name="Продукт">
                             <CanGrow>true</CanGrow>
@@ -474,9 +395,7 @@
                         </CellContents>
                       </TablixHeader>
                       <TablixMembers>
-                        <TablixMember>
-                          <Group Name="Подробности" />
-                        </TablixMember>
+                        <TablixMember />
                       </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
@@ -485,9 +404,10 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSetCanteenOperation</DataSetName>
+        <DataSetName>DataSet1</DataSetName>
+        <Left>2.286cm</Left>
         <Height>1.2cm</Height>
-        <Width>16.51cm</Width>
+        <Width>12.36133cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -511,18 +431,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SchoolCanteenDataSet5">
+    <DataSource Name="SchoolCanteenDataSet3">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>0beaf633-4767-422f-b312-46785474e1d5</rd:DataSourceID>
+      <rd:DataSourceID>480473c3-565f-4bad-a92e-cf4752802a16</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSetCanteenOperation">
+    <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SchoolCanteenDataSet5</DataSourceName>
+        <DataSourceName>SchoolCanteenDataSet3</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -538,25 +458,21 @@
           <DataField>Продукт</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Цена">
-          <DataField>Цена</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Количество">
           <DataField>Количество</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>SchoolCanteenDataSet5</rd:DataSetName>
-        <rd:SchemaPath>F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Dyplomka\Dyplomka\SchoolCanteenDataSet5.xsd</rd:SchemaPath>
-        <rd:TableName>Orders</rd:TableName>
+        <rd:DataSetName>SchoolCanteenDataSet3</rd:DataSetName>
+        <rd:SchemaPath>F:\Urashiki\Учёба\Преддипломная практика и ВКР\Готовые задания\Подготовка к ВКР\Dyplomka\Dyplomka\Dyplomka\SchoolCanteenDataSet3.xsd</rd:SchemaPath>
+        <rd:TableName>Orders </rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>OrdersTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>Orders_TableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>e3461e66-cc41-44bd-8211-4ee2c281f82a</rd:ReportID>
+  <rd:ReportID>26bbd51a-4de8-4fec-b797-e5deb1092a25</rd:ReportID>
 </Report>

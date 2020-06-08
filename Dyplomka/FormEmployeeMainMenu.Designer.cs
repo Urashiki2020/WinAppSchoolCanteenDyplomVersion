@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmployeeMainMenu));
             this.MainPanel2 = new System.Windows.Forms.Panel();
+            this.buttonClasses = new System.Windows.Forms.Button();
+            this.buttonUsers = new System.Windows.Forms.Button();
             this.buttonDiningRoomMenu = new System.Windows.Forms.Button();
             this.buttonFormSalesOrder = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
@@ -42,6 +45,8 @@
             // MainPanel2
             // 
             this.MainPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
+            this.MainPanel2.Controls.Add(this.buttonClasses);
+            this.MainPanel2.Controls.Add(this.buttonUsers);
             this.MainPanel2.Controls.Add(this.buttonDiningRoomMenu);
             this.MainPanel2.Controls.Add(this.buttonFormSalesOrder);
             this.MainPanel2.Controls.Add(this.buttonExit);
@@ -54,6 +59,44 @@
             this.MainPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainPanel2_MouseDown);
             this.MainPanel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainPanel2_MouseMove);
             // 
+            // buttonClasses
+            // 
+            this.buttonClasses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(114)))), ((int)(((byte)(43)))));
+            this.buttonClasses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonClasses.FlatAppearance.BorderSize = 0;
+            this.buttonClasses.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(49)))), ((int)(((byte)(18)))));
+            this.buttonClasses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(79)))), ((int)(((byte)(29)))));
+            this.buttonClasses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClasses.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClasses.ForeColor = System.Drawing.Color.White;
+            this.buttonClasses.Location = new System.Drawing.Point(320, 154);
+            this.buttonClasses.Name = "buttonClasses";
+            this.buttonClasses.Size = new System.Drawing.Size(149, 53);
+            this.buttonClasses.TabIndex = 10;
+            this.buttonClasses.Text = "Классы";
+            this.buttonClasses.UseVisualStyleBackColor = false;
+            this.buttonClasses.Click += new System.EventHandler(this.buttonClasses_Click);
+            this.buttonClasses.MouseEnter += new System.EventHandler(this.buttonClasses_MouseEnter);
+            // 
+            // buttonUsers
+            // 
+            this.buttonUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(114)))), ((int)(((byte)(43)))));
+            this.buttonUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonUsers.FlatAppearance.BorderSize = 0;
+            this.buttonUsers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(49)))), ((int)(((byte)(18)))));
+            this.buttonUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(79)))), ((int)(((byte)(29)))));
+            this.buttonUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUsers.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonUsers.ForeColor = System.Drawing.Color.White;
+            this.buttonUsers.Location = new System.Drawing.Point(285, 272);
+            this.buttonUsers.Name = "buttonUsers";
+            this.buttonUsers.Size = new System.Drawing.Size(215, 53);
+            this.buttonUsers.TabIndex = 9;
+            this.buttonUsers.Text = "Пользователи";
+            this.buttonUsers.UseVisualStyleBackColor = false;
+            this.buttonUsers.Click += new System.EventHandler(this.buttonUsers_Click);
+            this.buttonUsers.MouseEnter += new System.EventHandler(this.buttonUsers_MouseEnter);
+            // 
             // buttonDiningRoomMenu
             // 
             this.buttonDiningRoomMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(114)))), ((int)(((byte)(43)))));
@@ -64,7 +107,7 @@
             this.buttonDiningRoomMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDiningRoomMenu.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDiningRoomMenu.ForeColor = System.Drawing.Color.White;
-            this.buttonDiningRoomMenu.Location = new System.Drawing.Point(332, 211);
+            this.buttonDiningRoomMenu.Location = new System.Drawing.Point(320, 213);
             this.buttonDiningRoomMenu.Name = "buttonDiningRoomMenu";
             this.buttonDiningRoomMenu.Size = new System.Drawing.Size(149, 53);
             this.buttonDiningRoomMenu.TabIndex = 8;
@@ -83,7 +126,7 @@
             this.buttonFormSalesOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFormSalesOrder.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonFormSalesOrder.ForeColor = System.Drawing.Color.White;
-            this.buttonFormSalesOrder.Location = new System.Drawing.Point(286, 270);
+            this.buttonFormSalesOrder.Location = new System.Drawing.Point(274, 331);
             this.buttonFormSalesOrder.Name = "buttonFormSalesOrder";
             this.buttonFormSalesOrder.Size = new System.Drawing.Size(235, 53);
             this.buttonFormSalesOrder.TabIndex = 6;
@@ -158,6 +201,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.MainPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormEmployeeMainMenu";
             this.Text = "FormEmployeeMainMenu";
             this.MainPanel2.ResumeLayout(false);
@@ -176,5 +220,7 @@
         private System.Windows.Forms.Label TopPanel2;
         private System.Windows.Forms.Button buttonFormSalesOrder;
         private System.Windows.Forms.Button buttonDiningRoomMenu;
+        private System.Windows.Forms.Button buttonClasses;
+        private System.Windows.Forms.Button buttonUsers;
     }
 }
