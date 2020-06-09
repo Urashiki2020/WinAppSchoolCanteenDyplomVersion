@@ -118,7 +118,7 @@
             this.labelClosingTheForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelClosingTheForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelClosingTheForm.ForeColor = System.Drawing.Color.White;
-            this.labelClosingTheForm.Location = new System.Drawing.Point(906, 0);
+            this.labelClosingTheForm.Location = new System.Drawing.Point(905, 0);
             this.labelClosingTheForm.Name = "labelClosingTheForm";
             this.labelClosingTheForm.Size = new System.Drawing.Size(30, 36);
             this.labelClosingTheForm.TabIndex = 1;
